@@ -9,9 +9,13 @@ color teal_700
 color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable logo
+id animationView
+id imageView
 layout activity_main
 mipmap ic_launcher
 mipmap ic_launcher_round
+raw logoanimation
 string app_name
 style Theme.IEat
 xml backup_rules
