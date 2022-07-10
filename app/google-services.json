@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "93658957684",
+    "project_id": "ieat-40f8f",
+    "storage_bucket": "ieat-40f8f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93658957684:android:140ce5eb0b78d0f82d8e21",
+        "android_client_info": {
+          "package_name": "lv.ieatinc.ieat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93658957684-2ldhodr5u3kavlrk58gicu439rmtj562.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_ismz8XOwVVp0ShVrS2J33ADyFvyc0W0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93658957684-2ldhodr5u3kavlrk58gicu439rmtj562.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
