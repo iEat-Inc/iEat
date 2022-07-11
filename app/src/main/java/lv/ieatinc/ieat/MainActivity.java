@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         getSupportActionBar().hide();
-        (new Handler()).postDelayed(this::changeActivity, 2000);
+        (new Handler()).postDelayed(this::changeActivity, 4000);
     }
 
     private void changeActivity() {
