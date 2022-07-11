@@ -4,7 +4,7 @@
             "outputFile": "lv.ieatinc.ieat.app-mergeDebugResources-28:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\krist\\.gradle\\caches\\transforms-3\\c395e7e1015ee83acecf070a1d54b71a\\transformed\\core-1.7.0\\res\\values-v16\\values-v16.xml",
+                    "source": "/Users/alinaverkholomova/.gradle/caches/transforms-3/c395e7e1015ee83acecf070a1d54b71a/transformed/core-1.7.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\krist\\.gradle\\caches\\transforms-3\\394bb91a0dbf29de2a48cd3ef978c15e\\transformed\\appcompat-1.4.2\\res\\values-v16\\values-v16.xml",
+                    "source": "/Users/alinaverkholomova/.gradle/caches/transforms-3/394bb91a0dbf29de2a48cd3ef978c15e/transformed/appcompat-1.4.2/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

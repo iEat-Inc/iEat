@@ -1779,7 +1779,6 @@ int color notification_action_color_filter 0x7f050243
 int color notification_icon_bg_color 0x7f050244
 int color primary_dark_material_dark 0x7f050245
 int color primary_dark_material_light 0x7f050246
-int color primary_green 0x7f050265
 int color primary_material_dark 0x7f050247
 int color primary_material_light 0x7f050248
 int color primary_text_default_material_dark 0x7f050249
@@ -1792,7 +1791,6 @@ int color purple_700 0x7f05024f
 int color radiobutton_themeable_attribute_color 0x7f050250
 int color ripple_material_dark 0x7f050251
 int color ripple_material_light 0x7f050252
-int color secondary_green 0x7f050266
 int color secondary_text_default_material_dark 0x7f050253
 int color secondary_text_default_material_light 0x7f050254
 int color secondary_text_disabled_material_dark 0x7f050255
@@ -2512,10 +2510,8 @@ int drawable design_ic_visibility 0x7f070074
 int drawable design_ic_visibility_off 0x7f070075
 int drawable design_password_eye 0x7f070076
 int drawable design_snackbar_background 0x7f070077
-int drawable et_custom 0x7f0700b4
 int drawable googleg_disabled_color_18 0x7f070078
 int drawable googleg_standard_color_18 0x7f070079
-int drawable ic_arrow 0x7f0700b5
 int drawable ic_clock_black_24dp 0x7f07007a
 int drawable ic_keyboard_black_24dp 0x7f07007b
 int drawable ic_launcher_background 0x7f07007c
@@ -2569,14 +2565,10 @@ int drawable notification_template_icon_bg 0x7f0700ab
 int drawable notification_template_icon_low_bg 0x7f0700ac
 int drawable notification_tile_bg 0x7f0700ad
 int drawable notify_panel_notification_icon_bg 0x7f0700ae
-int drawable reset_password 0x7f0700b6
 int drawable test_custom_background 0x7f0700af
 int drawable test_level_drawable 0x7f0700b0
 int drawable tooltip_frame_dark 0x7f0700b1
 int drawable tooltip_frame_light 0x7f0700b2
-int drawable triangle 0x7f0700b3
-int font fredokaone 0x7f140000
-int font robotoflex 0x7f140001
 int id ALT 0x7f080000
 int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
@@ -2668,7 +2660,6 @@ int id autoComplete 0x7f080057
 int id autoCompleteToEnd 0x7f080058
 int id autoCompleteToStart 0x7f080059
 int id automatic 0x7f08005a
-int id background_triangle 0x7f0801fc
 int id barrier 0x7f08005b
 int id baseline 0x7f08005c
 int id beginOnFirstDraw 0x7f08005d
@@ -2784,15 +2775,7 @@ int id fixed 0x7f0800ca
 int id flip 0x7f0800cb
 int id floating 0x7f0800cc
 int id forever 0x7f0800cd
-int id forgot_password_text 0x7f0801f8
-int id fp_back_arrow 0x7f080206
-int id fp_change_password_button 0x7f080207
-int id fp_email_code_input 0x7f080208
-int id fp_header 0x7f080209
-int id fp_new_password_input 0x7f08020a
-int id fp_send_email_text 0x7f08020b
-int id fp_timer_text 0x7f08020c
-int id fragmentContainer 0x7f0801fa
+int id fragmentContainerView 0x7f0800ce
 int id fragment_container_view_tag 0x7f0800cf
 int id frost 0x7f0800d0
 int id fullscreen_header 0x7f0800d1
@@ -3201,7 +3184,6 @@ int layout design_navigation_menu 0x7f0b002a
 int layout design_navigation_menu_item 0x7f0b002b
 int layout design_text_input_end_icon 0x7f0b002c
 int layout design_text_input_start_icon 0x7f0b002d
-int layout forgot_password_fragment 0x7f0b0079
 int layout login_fragment 0x7f0b002e
 int layout m3_alert_dialog 0x7f0b002f
 int layout m3_alert_dialog_actions 0x7f0b0030
@@ -3344,7 +3326,6 @@ int string error_icon_content_description 0x7f100038
 int string exposed_dropdown_menu_content_description 0x7f100039
 int string fab_transformation_scrim_behavior 0x7f10003a
 int string fab_transformation_sheet_behavior 0x7f10003b
-int string forgot_password 0x7f100094
 int string gcm_defaultSenderId 0x7f10003c
 int string google_api_key 0x7f10003d
 int string google_app_id 0x7f10003e
