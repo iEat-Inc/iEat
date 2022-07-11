@@ -1,4 +1,4 @@
-package lv.ieatinc.ieat;
+package lv.ieatinc.ieat.utilities;
 
 import android.util.Log;
 
@@ -12,6 +12,8 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import lv.ieatinc.ieat.Constants;
 
 public class FirebaseDB {
 

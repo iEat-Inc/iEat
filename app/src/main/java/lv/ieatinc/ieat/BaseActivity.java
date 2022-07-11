@@ -16,7 +16,7 @@ public class BaseActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .setReorderingAllowed(true)
-                    .add(R.id.fragmentContainerView, LoginFragment.class, null)
+                    .add(R.id.fragmentContainer, LoginFragment.class, null)
                     .commit();
         }
     }
