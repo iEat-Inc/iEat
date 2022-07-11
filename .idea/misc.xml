@@ -3,14 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/krist/AndroidStudioProjects/iEat/app/src/main/res/drawable/et_custom.xml" value="0.2375" />
-        <entry key="..\:/Users/krist/AndroidStudioProjects/iEat/app/src/main/res/drawable/ic_arrow.xml" value="0.2375" />
-        <entry key="..\:/Users/krist/AndroidStudioProjects/iEat/app/src/main/res/drawable/triangle.xml" value="0.199" />
-        <entry key="..\:/Users/krist/AndroidStudioProjects/iEat/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/krist/AndroidStudioProjects/iEat/app/src/main/res/layout/base_activity.xml" value="0.22" />
-        <entry key="..\:/Users/krist/AndroidStudioProjects/iEat/app/src/main/res/layout/firebase_test_fragment.xml" value="0.22" />
-        <entry key="..\:/Users/krist/AndroidStudioProjects/iEat/app/src/main/res/layout/forgot_password_fragment.xml" value="0.25" />
-        <entry key="..\:/Users/krist/AndroidStudioProjects/iEat/app/src/main/res/layout/login_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/krist/AndroidStudioProjects/iEat/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="app/src/main/res/drawable/bt_custom.xml" value="0.2615" />
+        <entry key="app/src/main/res/drawable/et_custom.xml" value="0.2615" />
+        <entry key="app/src/main/res/drawable/ic_arrow.xml" value="0.1065" />
+        <entry key="app/src/main/res/drawable/reset_password.xml" value="0.1065" />
+        <entry key="app/src/main/res/drawable/triangle.xml" value="0.1065" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/base_activity.xml" value="0.2598958333333333" />
+        <entry key="app/src/main/res/layout/forgot_password_fragment.xml" value="0.29545454545454547" />
       </map>
     </option>
   </component>

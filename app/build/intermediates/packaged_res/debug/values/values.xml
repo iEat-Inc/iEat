@@ -10,7 +10,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">iEat</string>
+    <string name="create_account">Create account</string>
+    <string name="create_user">CREATE USER</string>
     <string name="default_web_client_id" translatable="false">93658957684-2ldhodr5u3kavlrk58gicu439rmtj562.apps.googleusercontent.com</string>
+    <string name="developed_by">Developed by iEat Inc.</string>
+    <string name="enter_confirm_password">Confirm password</string>
+    <string name="enter_email">Email</string>
+    <string name="enter_name">Username</string>
+    <string name="enter_password">Password</string>
     <string name="forgot_password">Forgot password</string>
     <string name="gcm_defaultSenderId" translatable="false">93658957684</string>
     <string name="google_api_key" translatable="false">AIzaSyA_ismz8XOwVVp0ShVrS2J33ADyFvyc0W0</string>
