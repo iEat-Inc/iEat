@@ -28,30 +28,16 @@ import lv.ieatinc.ieat.R;
 
 public class SignupFragment extends Fragment {
     public final String TAG = "SIGNUP FRAGMENT";
+    EditText usernameEditText;
     EditText emailEditText;
     EditText passEditText;
     EditText confPassEditText;
+    EditText phoneEditText;
     Button signupButton;
     private FirebaseAuth mAuth;
 
     public SignupFragment() {
         super(R.layout.signup_fragment);
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser != null){
-            reload();
-        }
-    }
-
-    private void reload() { }
-
-    private void updateUI(FirebaseUser user) {
-
     }
 
     @Override
@@ -74,22 +60,43 @@ public class SignupFragment extends Fragment {
 
             @Override
             public void onClick(View view) {
-
-                emailEditText = view.findViewById(R.id.Signup_Email);
-                passEditText = view.findViewById(R.id.Signup_Password);
-                confPassEditText = view.findViewById(R.id.Signup_ConfirmPassword);
-                signupButton = view.findViewById(R.id.Signup_button);
+                usernameEditText = getView().findViewById(R.id.Signup_UserName);
+                emailEditText = getView().findViewById(R.id.Signup_Email);
+                passEditText = getView().findViewById(R.id.Signup_Password);
+                confPassEditText = getView().findViewById(R.id.Signup_ConfirmPassword);
+                signupButton = getView().findViewById(R.id.Signup_button);
+                phoneEditText = getView().findViewById(R.id.Signup_phone);
 
                 signupButton.setOnClickListener(new View.OnClickListener() {
-
-                   final String email = emailEditText.getText().toString().trim();
-                   final String pass = passEditText.getText().toString().trim();
-                   final String confPass = confPassEditText.getText().toString().trim();
-
-
                     @Override
                     public void onClick(View v) {
-                        if (email.isEmpty()) {
+                        final String username = usernameEditText.getText().toString().trim();
+                        final String email = emailEditText.getText().toString().trim();
+                        final String pass = passEditText.getText().toString().trim();
+                        final String confPass = confPassEditText.getText().toString().trim();
+                        final String phone = phoneEditText.getText().toString().trim();
+
+                        //TODO: Firebase username exists check
+                        if (!username.isEmpty()) {
+                            if(username.length() < Constants.MIN_USERNAME_LENGTH) {
+                                usernameEditText.setError("Username is too short");
+                                usernameEditText.requestFocus();
+                                return;
+                            }
+                        } else {
+                            usernameEditText.setError("Username is empty");
+                            usernameEditText.requestFocus();
+                            return;
+                        }
+
+                        if (!email.isEmpty()) {
+                            if(!Patterns.EMAIL_ADDRESS.matcher(email).matches())
+                            {
+                                emailEditText.setError("Please enter a valid email address");
+                                emailEditText.requestFocus();
+                                return;
+                            }
+                        } else {
                             emailEditText.setError("Email is empty");
                             emailEditText.requestFocus();
                             return;
@@ -97,49 +104,66 @@ public class SignupFragment extends Fragment {
 
                         if (!pass.isEmpty()) {
                             if (pass.length() < Constants.MIN_PASSWORD_LENGTH) {
-                                emailEditText.setError("The password is too short!");
-                                emailEditText.requestFocus();
+                                passEditText.setError("The password is too short!");
+                                passEditText.requestFocus();
                                 return;
                             }
                         } else {
-                            emailEditText.setError("Please enter a new password!");
-                            emailEditText.requestFocus();
-                            return;
-                        }
-                        if(!Patterns.EMAIL_ADDRESS.matcher(email).matches())
-                        {
-                            emailEditText.setError("Enter the valid email address");
-                            emailEditText.requestFocus();
-                            return;
-                        }
-
-                        if (!pass.equals(confPass)) {
-                            passEditText.setError("Passwords should match");
+                            passEditText.setError("Password is empty");
                             passEditText.requestFocus();
                             return;
                         }
 
+                        if (!confPass.isEmpty()) {
+                            if (confPass.length() < Constants.MIN_PASSWORD_LENGTH) {
+                                confPassEditText.setError("The password is too short!");
+                                confPassEditText.requestFocus();
+                                return;
+                            }
+                        } else {
+                            confPassEditText.setError("Password is empty");
+                            confPassEditText.requestFocus();
+                            return;
+                        }
 
-                            mAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        if(!phone.isEmpty()) {
+                            if(!Patterns.PHONE.matcher(phone).matches()) {
+                                phoneEditText.setError("Please enter a valid phone number");
+                                phoneEditText.requestFocus();
+                                return;
+                            }
+                        } else {
+                            phoneEditText.setError("Phone number is empty");
+                            phoneEditText.requestFocus();
+                            return;
+                        }
+
+                        if (!pass.equals(confPass)) {
+                            passEditText.setError("Passwords do not match");
+                            passEditText.requestFocus();
+                            return;
+                        }
+
+                        mAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
-                                    // Sign in success, update UI with the signed-in user's information
                                     Log.d(TAG, "createUserWithEmail:success");
                                     FirebaseUser user = mAuth.getCurrentUser();
-                                    updateUI(user);
+
+                                    //TODO: Sign in the user
+                                    back_arrow.callOnClick();
                                 } else {
                                     // If sign in fails, display a message to the user.
                                     Log.w(TAG, "createUserWithEmail:failure", task.getException());
                                     Toast.makeText(getContext(), "Authentication failed.",
                                             Toast.LENGTH_SHORT).show();
-                                    updateUI(null);
                                 }
                             }
-                            });
-                        }
+                        });
+                    }
                 });
             }
-                });
+        });
     }
 }

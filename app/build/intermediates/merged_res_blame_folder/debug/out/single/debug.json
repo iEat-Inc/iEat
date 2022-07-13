@@ -1,134 +1,134 @@
 [
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\drawable_et_custom.xml.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\drawable\\et_custom.xml"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\drawable_ic_left_arrow.xml.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\drawable\\ic_left_arrow.xml"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/layout_activity_main.xml.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/layout/activity_main.xml"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\layout_signup_fragment.xml.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\layout\\signup_fragment.xml"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/layout_forgot_password_fragment.xml.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/layout/forgot_password_fragment.xml"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\layout_base_activity.xml.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\layout\\base_activity.xml"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/drawable_reset_password.xml.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/drawable/reset_password.xml"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/xml_backup_rules.xml.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/xml/backup_rules.xml"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\raw_logoanimation.json.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\raw\\logoanimation.json"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/font_robotoflex.ttf.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/font/robotoflex.ttf"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\layout_forgot_password_fragment.xml.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\layout\\forgot_password_fragment.xml"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/font_fredokaone.ttf.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/font/fredokaone.ttf"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\drawable_bt_custom.xml.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\drawable\\bt_custom.xml"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "lv.ieatinc.ieat.app-merged_res-32:/layout_signup_fragment.xml.flat",
-        "source": "lv.ieatinc.ieat.app-main-34:/layout/signup_fragment.xml"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\font_fredokaone.ttf.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\font\\fredokaone.ttf"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/drawable_ic_plus.xml.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/drawable/ic_plus.xml"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\drawable_triangle.xml.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\drawable\\triangle.xml"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\drawable_reset_password.xml.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\drawable\\reset_password.xml"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/drawable_triangle.xml.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/drawable/triangle.xml"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\drawable_ic_plus.xml.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\drawable\\ic_plus.xml"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/layout_signup_fragment.xml.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/layout/signup_fragment.xml"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\drawable-v24_logo_dark_green.png.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\drawable-v24\\logo_dark_green.png"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\font_robotoflex.ttf.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\font\\robotoflex.ttf"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/xml/data_extraction_rules.xml"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/raw_logoanimation.json.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/raw/logoanimation.json"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/drawable-v24_logo_dark_green.png.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/drawable-v24/logo_dark_green.png"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\layout_login_fragment.xml.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\layout\\login_fragment.xml"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/drawable_ic_left_arrow.xml.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/drawable/ic_left_arrow.xml"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\drawable-v24_logo_light_green.png.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\drawable-v24\\logo_light_green.png"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/drawable_et_custom.xml.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/drawable/et_custom.xml"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/drawable_bt_custom.xml.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/drawable/bt_custom.xml"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\xml_backup_rules.xml.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "lv.ieatinc.ieat.app-merged_res-32:/layout_login_fragment.xml.flat",
+        "source": "lv.ieatinc.ieat.app-main-34:/layout/login_fragment.xml"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/layout_login_fragment.xml.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/layout/login_fragment.xml"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/layout_base_activity.xml.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/layout/base_activity.xml"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\layout_activity_main.xml.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\layout\\activity_main.xml"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/drawable-v24_logo_light_green.png.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/drawable-v24/logo_light_green.png"
+        "merged": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-merged_res-32:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\JDK\\daemon\\7.3.3\\lv.ieatinc.ieat.app-main-34:\\xml\\data_extraction_rules.xml"
     }
 ]

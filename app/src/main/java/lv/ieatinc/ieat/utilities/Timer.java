@@ -14,7 +14,7 @@ public class Timer {
         counting = true;
     }
 
-    CountDownTimer cdt = new CountDownTimer(300000, 1000) {
+    CountDownTimer cdt = new CountDownTimer(60000, 1000) {
 
         public void onTick(long millisUntilFinished) {
             if (millisUntilFinished > 60000) {
@@ -29,7 +29,7 @@ public class Timer {
         }
 
         public void onFinish() {
-            timeCounter.setText("Invalid code!");
+            timeCounter.setText("(open)");
             counting = false;
         }
     }.start();

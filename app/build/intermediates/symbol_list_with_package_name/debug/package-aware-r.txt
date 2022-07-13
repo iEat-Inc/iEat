@@ -2604,6 +2604,7 @@ id Signup_Email
 id Signup_Password
 id Signup_UserName
 id Signup_button
+id Signup_phone
 id TOP_END
 id TOP_START
 id accelerate
@@ -2807,9 +2808,10 @@ id floating
 id forever
 id fp_back_arrow
 id fp_change_password_button
-id fp_email_code_input
 id fp_header
 id fp_new_password_input
+id fp_phone_code_input
+id fp_phone_number_input
 id fp_send_email_text
 id fp_timer_header_text
 id fp_timer_time_text
@@ -2868,6 +2870,7 @@ id list_item
 id login_create_account_button
 id login_email_input
 id login_forgot_password_text
+id login_forgot_password_text_2
 id login_header
 id login_login_button
 id login_login_google_button
