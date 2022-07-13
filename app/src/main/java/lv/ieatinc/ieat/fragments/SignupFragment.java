@@ -55,8 +55,8 @@ public class SignupFragment extends Fragment {
             }
         });
 
-        Button createUser = view.findViewById(R.id.Signup_button);
-        createUser.setOnClickListener(new View.OnClickListener() {
+        signupButton = view.findViewById(R.id.Signup_button);
+        signupButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
