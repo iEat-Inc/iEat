@@ -2599,6 +2599,11 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
+id Signup_ConfirmPassword
+id Signup_Email
+id Signup_Password
+id Signup_UserName
+id Signup_button
 id TOP_END
 id TOP_START
 id accelerate
@@ -2696,7 +2701,6 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
-id button
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2776,10 +2780,6 @@ id easeIn
 id easeInOut
 id easeOut
 id east
-id editTextTextConfirmPassword
-id editTextTextEmail
-id editTextTextPassword
-id editTextTextPersonName
 id edit_query
 id edittext_dropdown_editable
 id edittext_dropdown_noneditable
@@ -3011,6 +3011,8 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id signup_back_arrow
+id signup_header
 id sin
 id skipCollapsed
 id skipped

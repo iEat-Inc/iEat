@@ -18,7 +18,7 @@
 
 
     <TextView
-        android:id="@+id/fp_header"
+        android:id="@+id/signup_header"
         android:layout_width="233dp"
         android:layout_height="86dp"
         android:layout_marginTop="60dp"
@@ -33,9 +33,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/signup_back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:scaleX="1.3"
+        android:scaleY="1.3"
+        app:layout_constraintBottom_toBottomOf="@+id/signup_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/signup_header"
+        app:srcCompat="@drawable/ic_left_arrow" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/Signup_UserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -53,11 +64,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fp_header"
+        app:layout_constraintTop_toBottomOf="@+id/signup_header"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextTextEmail"
+        android:id="@+id/Signup_Email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -74,10 +85,10 @@
         android:textColorHint="#808080"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/Signup_UserName" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/Signup_Password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -94,10 +105,10 @@
         android:textColorHint="#808080"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/Signup_Email" />
 
     <EditText
-        android:id="@+id/editTextTextConfirmPassword"
+        android:id="@+id/Signup_ConfirmPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -114,10 +125,10 @@
         android:textColorHint="#808080"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/Signup_Password" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Signup_button"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="106dp"
@@ -128,7 +139,7 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextConfirmPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/Signup_ConfirmPassword" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -141,7 +152,7 @@
         android:textColor="#8FD14E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button">
+        app:layout_constraintTop_toBottomOf="@+id/Signup_button">
 
     </TextView>
 
