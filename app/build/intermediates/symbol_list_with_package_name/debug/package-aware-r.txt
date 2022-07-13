@@ -1237,6 +1237,10 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color browser_actions_bg_grey
+color browser_actions_divider_color
+color browser_actions_text_color
+color browser_actions_title_color
 color button_material_dark
 color button_material_light
 color cardview_dark_background
@@ -1895,6 +1899,8 @@ dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
 dimen appcompat_dialog_background_inset
+dimen browser_actions_context_menu_max_width
+dimen browser_actions_context_menu_min_padding
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -2517,11 +2523,11 @@ drawable design_snackbar_background
 drawable et_custom
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
-drawable ic_arrow
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_left_arrow
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -2529,7 +2535,9 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable logo
+drawable ic_plus
+drawable logo_dark_green
+drawable logo_light_green
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2671,6 +2679,7 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id automatic
 id background_triangle
+id background_triangle2
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2682,6 +2691,11 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id browser_actions_header_text
+id browser_actions_menu_item_icon
+id browser_actions_menu_item_text
+id browser_actions_menu_items
+id browser_actions_menu_view
 id button
 id buttonPanel
 id cache_measures
@@ -2791,14 +2805,14 @@ id fixed
 id flip
 id floating
 id forever
-id forgot_password_text
 id fp_back_arrow
 id fp_change_password_button
 id fp_email_code_input
 id fp_header
 id fp_new_password_input
 id fp_send_email_text
-id fp_timer_text
+id fp_timer_header_text
+id fp_timer_time_text
 id fragmentContainer
 id fragment_container_view_tag
 id frost
@@ -2851,6 +2865,13 @@ id line3
 id linear
 id listMode
 id list_item
+id login_create_account_button
+id login_email_input
+id login_forgot_password_text
+id login_header
+id login_login_button
+id login_login_google_button
+id login_password_input
 id lottie_layer_name
 id masked
 id match_constraint
@@ -3048,7 +3069,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3192,6 +3212,8 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout base_activity
+layout browser_actions_context_menu_page
+layout browser_actions_context_menu_row
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3347,6 +3369,7 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string copy_toast_msg
 string create_account
 string create_user
 string default_web_client_id
@@ -3359,6 +3382,9 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string fallback_menu_item_copy_link
+string fallback_menu_item_open_in_browser
+string fallback_menu_item_share_link
 string forgot_password
 string gcm_defaultSenderId
 string google_api_key
@@ -4656,6 +4682,7 @@ styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration
 styleable include constraintSet
 xml backup_rules
 xml data_extraction_rules
+xml image_share_filepaths
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

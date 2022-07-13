@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "lv.ieatinc.ieat.app-mergeDebugResources-28:/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "lv.ieatinc.ieat.app-mergeDebugResources-30:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "/Users/alinaverkholomova/.gradle/caches/transforms-3/394bb91a0dbf29de2a48cd3ef978c15e/transformed/appcompat-1.4.2/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "source": "C:\\JDK\\caches\\transforms-3\\394bb91a0dbf29de2a48cd3ef978c15e\\transformed\\appcompat-1.4.2\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void changeActivity() {
-        Log.i(TAG, "Called");
         Intent intent = new Intent(this, BaseActivity.class);
         startActivity(intent);
+        finish();
     }
 }

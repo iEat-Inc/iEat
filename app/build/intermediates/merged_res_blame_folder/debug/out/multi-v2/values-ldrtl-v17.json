@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "lv.ieatinc.ieat.app-mergeDebugResources-28:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "outputFile": "lv.ieatinc.ieat.app-mergeDebugResources-30:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "/Users/alinaverkholomova/.gradle/caches/transforms-3/12a739d4a1f4d0799a8dabc3595aa692/transformed/material-1.6.1/res/values-ldrtl-v17/values-ldrtl-v17.xml",
+                    "source": "C:\\JDK\\caches\\transforms-3\\12a739d4a1f4d0799a8dabc3595aa692\\transformed\\material-1.6.1\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
