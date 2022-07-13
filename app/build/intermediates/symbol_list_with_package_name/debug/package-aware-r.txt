@@ -2523,6 +2523,7 @@ drawable design_snackbar_background
 drawable et_custom
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable home_bt_custom
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2833,6 +2834,11 @@ id header_title
 id hideable
 id home
 id homeAsUp
+id home_header
+id home_new_rest
+id home_rest_poor
+id home_rest_poorer
+id home_rest_the_poorest
 id honorRequest
 id horizontal_only
 id icon
@@ -3236,6 +3242,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout forgot_password_fragment
+layout fragment_home
 layout login_fragment
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3397,6 +3404,11 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
+string home_choose_restaurant
+string home_new_rest
+string home_restaurant_poor
+string home_restaurant_poorer
+string home_restaurant_the_poorest
 string icon_content_description
 string item_view_role_description
 string label

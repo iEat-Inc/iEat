@@ -24,6 +24,11 @@
     <string name="google_app_id" translatable="false">1:93658957684:android:140ce5eb0b78d0f82d8e21</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA_ismz8XOwVVp0ShVrS2J33ADyFvyc0W0</string>
     <string name="google_storage_bucket" translatable="false">ieat-40f8f.appspot.com</string>
+    <string name="home_choose_restaurant">Choose restaurant</string>
+    <string name="home_new_rest">New</string>
+    <string name="home_restaurant_poor">Restaurant \"Poor\"</string>
+    <string name="home_restaurant_poorer">Restaurant \"Poorer\"</string>
+    <string name="home_restaurant_the_poorest">Restaurant \"The poorest\"</string>
     <string name="project_id" translatable="false">ieat-40f8f</string>
     <style name="Theme.IEat" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         

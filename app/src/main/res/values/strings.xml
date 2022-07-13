@@ -8,5 +8,12 @@
     <string name="enter_email">Email</string>
     <string name="enter_name">Username</string>
     <string name="create_account">Create account</string>
+    <string name="home_choose_restaurant">Choose restaurant</string>
+    <string name="home_restaurant_poor">Restaurant \"Poor\"</string>
+    <string name="home_restaurant_poorer">Restaurant \"Poorer\"</string>
+    <string name="home_restaurant_the_poorest">Restaurant \"The poorest\"</string>
+    <string name="home_new_rest">New</string>
+
+
 
 </resources>

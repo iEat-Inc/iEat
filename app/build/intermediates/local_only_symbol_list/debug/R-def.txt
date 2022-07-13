@@ -11,6 +11,7 @@ color teal_700
 color white
 drawable bt_custom
 drawable et_custom
+drawable home_bt_custom
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_left_arrow
@@ -40,6 +41,11 @@ id fp_send_email_text
 id fp_timer_header_text
 id fp_timer_time_text
 id fragmentContainer
+id home_header
+id home_new_rest
+id home_rest_poor
+id home_rest_poorer
+id home_rest_the_poorest
 id imageView
 id login_create_account_button
 id login_email_input
@@ -54,6 +60,7 @@ id signup_header
 layout activity_main
 layout base_activity
 layout forgot_password_fragment
+layout fragment_home
 layout login_fragment
 layout signup_fragment
 mipmap ic_launcher
@@ -74,6 +81,11 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string home_choose_restaurant
+string home_new_rest
+string home_restaurant_poor
+string home_restaurant_poorer
+string home_restaurant_the_poorest
 string project_id
 style Theme.IEat
 xml backup_rules
