@@ -46,7 +46,7 @@ public class SignupFragment extends Fragment {
 
         mAuth = FirebaseAuth.getInstance();
 
-        ImageView back_arrow = view.findViewById(R.id.signup_back_arrow);
+        ImageView back_arrow = view.findViewById(R.id.signup_back_arrow2);
         back_arrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -13,6 +13,9 @@
     <string name="home_restaurant_poorer">Restaurant \"Poorer\"</string>
     <string name="home_restaurant_the_poorest">Restaurant \"The poorest\"</string>
     <string name="home_new_rest">New</string>
+    <string name="new_restaurant">New restaurant</string>
+    <string name="restaurant_name">Restaurant name</string>
+    <string name="create_restaurant">Add restaurant</string>
 
 
 </resources>
