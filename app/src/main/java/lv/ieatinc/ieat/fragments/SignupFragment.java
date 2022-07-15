@@ -57,9 +57,8 @@ public class SignupFragment extends Fragment {
 
         signupButton = view.findViewById(R.id.Signup_button);
         signupButton.setOnClickListener(new View.OnClickListener() {
-
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 usernameEditText = getView().findViewById(R.id.Signup_UserName);
                 emailEditText = getView().findViewById(R.id.Signup_Email);
                 passEditText = getView().findViewById(R.id.Signup_Password);
@@ -67,100 +66,93 @@ public class SignupFragment extends Fragment {
                 signupButton = getView().findViewById(R.id.Signup_button);
                 phoneEditText = getView().findViewById(R.id.Signup_phone);
 
-                signupButton.setOnClickListener(new View.OnClickListener() {
+                final String username = usernameEditText.getText().toString().trim();
+                final String email = emailEditText.getText().toString().trim();
+                final String pass = passEditText.getText().toString().trim();
+                final String confPass = confPassEditText.getText().toString().trim();
+                final String phone = phoneEditText.getText().toString().trim();
+
+                //TODO: Firebase username exists check
+                if (!username.isEmpty()) {
+                    if (username.length() < Constants.MIN_USERNAME_LENGTH) {
+                        usernameEditText.setError("Username is too short");
+                        usernameEditText.requestFocus();
+                        return;
+                    }
+                } else {
+                    usernameEditText.setError("Username is empty");
+                    usernameEditText.requestFocus();
+                    return;
+                }
+
+                if (!email.isEmpty()) {
+                    if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                        emailEditText.setError("Please enter a valid email address");
+                        emailEditText.requestFocus();
+                        return;
+                    }
+                } else {
+                    emailEditText.setError("Email is empty");
+                    emailEditText.requestFocus();
+                    return;
+                }
+
+                if (!pass.isEmpty()) {
+                    if (pass.length() < Constants.MIN_PASSWORD_LENGTH) {
+                        passEditText.setError("The password is too short!");
+                        passEditText.requestFocus();
+                        return;
+                    }
+                } else {
+                    passEditText.setError("Password is empty");
+                    passEditText.requestFocus();
+                    return;
+                }
+
+                if (!confPass.isEmpty()) {
+                    if (confPass.length() < Constants.MIN_PASSWORD_LENGTH) {
+                        confPassEditText.setError("The password is too short!");
+                        confPassEditText.requestFocus();
+                        return;
+                    }
+                } else {
+                    confPassEditText.setError("Password is empty");
+                    confPassEditText.requestFocus();
+                    return;
+                }
+
+                if (!phone.isEmpty()) {
+                    if (!Patterns.PHONE.matcher(phone).matches()) {
+                        phoneEditText.setError("Please enter a valid phone number");
+                        phoneEditText.requestFocus();
+                        return;
+                    }
+                } else {
+                    phoneEditText.setError("Phone number is empty");
+                    phoneEditText.requestFocus();
+                    return;
+                }
+
+                if (!pass.equals(confPass)) {
+                    passEditText.setError("Passwords do not match");
+                    passEditText.requestFocus();
+                    return;
+                }
+
+                mAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
-                    public void onClick(View v) {
-                        final String username = usernameEditText.getText().toString().trim();
-                        final String email = emailEditText.getText().toString().trim();
-                        final String pass = passEditText.getText().toString().trim();
-                        final String confPass = confPassEditText.getText().toString().trim();
-                        final String phone = phoneEditText.getText().toString().trim();
-
-                        //TODO: Firebase username exists check
-                        if (!username.isEmpty()) {
-                            if(username.length() < Constants.MIN_USERNAME_LENGTH) {
-                                usernameEditText.setError("Username is too short");
-                                usernameEditText.requestFocus();
-                                return;
-                            }
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            Log.d(TAG, "createUserWithEmail:success");
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            Toast.makeText(getContext(), "User created!",
+                                    Toast.LENGTH_SHORT).show();
                         } else {
-                            usernameEditText.setError("Username is empty");
-                            usernameEditText.requestFocus();
-                            return;
+                            // If sign in fails, display a message to the user.
+                            Log.w(TAG, "createUserWithEmail:failure", task.getException());
+                            Toast.makeText(getContext(), "Authentication failed.",
+                                    Toast.LENGTH_SHORT).show();
                         }
-
-                        if (!email.isEmpty()) {
-                            if(!Patterns.EMAIL_ADDRESS.matcher(email).matches())
-                            {
-                                emailEditText.setError("Please enter a valid email address");
-                                emailEditText.requestFocus();
-                                return;
-                            }
-                        } else {
-                            emailEditText.setError("Email is empty");
-                            emailEditText.requestFocus();
-                            return;
-                        }
-
-                        if (!pass.isEmpty()) {
-                            if (pass.length() < Constants.MIN_PASSWORD_LENGTH) {
-                                passEditText.setError("The password is too short!");
-                                passEditText.requestFocus();
-                                return;
-                            }
-                        } else {
-                            passEditText.setError("Password is empty");
-                            passEditText.requestFocus();
-                            return;
-                        }
-
-                        if (!confPass.isEmpty()) {
-                            if (confPass.length() < Constants.MIN_PASSWORD_LENGTH) {
-                                confPassEditText.setError("The password is too short!");
-                                confPassEditText.requestFocus();
-                                return;
-                            }
-                        } else {
-                            confPassEditText.setError("Password is empty");
-                            confPassEditText.requestFocus();
-                            return;
-                        }
-
-                        if(!phone.isEmpty()) {
-                            if(!Patterns.PHONE.matcher(phone).matches()) {
-                                phoneEditText.setError("Please enter a valid phone number");
-                                phoneEditText.requestFocus();
-                                return;
-                            }
-                        } else {
-                            phoneEditText.setError("Phone number is empty");
-                            phoneEditText.requestFocus();
-                            return;
-                        }
-
-                        if (!pass.equals(confPass)) {
-                            passEditText.setError("Passwords do not match");
-                            passEditText.requestFocus();
-                            return;
-                        }
-
-                        mAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if (task.isSuccessful()) {
-                                    Log.d(TAG, "createUserWithEmail:success");
-                                    FirebaseUser user = mAuth.getCurrentUser();
-
-                                    //TODO: Sign in the user
-                                    back_arrow.callOnClick();
-                                } else {
-                                    // If sign in fails, display a message to the user.
-                                    Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                                    Toast.makeText(getContext(), "Authentication failed.",
-                                            Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        });
                     }
                 });
             }

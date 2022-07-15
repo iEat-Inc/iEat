@@ -1,6 +1,7 @@
 package lv.ieatinc.ieat.fragments;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Patterns;
@@ -19,13 +20,16 @@ import com.google.android.gms.auth.api.identity.Identity;
 import com.google.android.gms.auth.api.identity.SignInClient;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import org.w3c.dom.Text;
 
 import java.util.Map;
 
+import lv.ieatinc.ieat.BaseActivity;
 import lv.ieatinc.ieat.utilities.FirebaseDB;
 import lv.ieatinc.ieat.R;
 
@@ -34,9 +38,11 @@ public class LoginFragment extends Fragment {
     private String server_client_Id = "";
     private SignInClient oneTapClient;
     private BeginSignInRequest signInRequest;
+    FirebaseAuth mAuth;
 
     public LoginFragment() {
         super(R.layout.login_fragment);
+        mAuth = FirebaseAuth.getInstance();
     }
 
     @Override
@@ -44,14 +50,62 @@ public class LoginFragment extends Fragment {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         FragmentActivity activity = getActivity();
 
-//        FirebaseDB.readData(new FirebaseDB.FirestoreCallback() {
-//            @Override
-//            public void onCallback(Map<String, Object> data) {
-//                Log.i(TAG, String.valueOf(data));
-//            }
-//        }, db);
+        // Uncomment this when you want the app to skip login, since logged in users save on device
+        // This way you have to log in only once
+//        FirebaseUser currentUser = mAuth.getCurrentUser();
+//        if(currentUser != null){
+//            Intent intent = new Intent(getActivity(), BaseActivity.class);
+//            startActivity(intent);
+//            getActivity().finish();
+//        }
 
-        // Not yet finished, will continue on 13.07
+        Button login = view.findViewById(R.id.login_login_button);
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TextView email_input = getView().findViewById(R.id.login_email_input);
+                TextView password_input = getView().findViewById(R.id.login_password_input);
+
+                String email = email_input.getText().toString().trim();
+                String password = password_input.getText().toString().trim();
+
+                if (!email.isEmpty()) {
+                    if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                        email_input.setError("Not a valid email address");
+                        email_input.requestFocus();
+                        return;
+                    }
+                } else {
+                    email_input.setError("Please input your email");
+                    email_input.requestFocus();
+                    return;
+                }
+
+                if (password.isEmpty()) {
+                    password_input.setError("Please input your password");
+                    password_input.requestFocus();
+                    return;
+                }
+
+                mAuth.signInWithEmailAndPassword(email, password)
+                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()) {
+                                    Log.d(TAG, "signInWithEmail:success");
+                                    Intent intent = new Intent(getActivity(), BaseActivity.class);
+                                    startActivity(intent);
+                                    getActivity().finish();
+                                } else {
+                                    Log.w(TAG, "signInWithEmail:failure", task.getException());
+                                    Toast.makeText(getContext(), "Authentication failed.",
+                                            Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
+            }
+        });
+
         Button login_with_google = view.findViewById(R.id.login_login_google_button);
         login_with_google.setOnClickListener(new View.OnClickListener() {
             @Override
