@@ -5,7 +5,6 @@ import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -135,7 +134,7 @@ public class ForgotPasswordFragment extends Fragment {
             }
         });
 
-        TextView send_email = view.findViewById(R.id.fp_send_email_text);
+        TextView send_email = view.findViewById(R.id.fp_send_phone_code_text);
         send_email.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -8,7 +8,7 @@
     <string name="enter_email">Email</string>
     <string name="enter_name">Username</string>
     <string name="create_account">Create account</string>
-    <string name="home_choose_restaurant">Choose restaurant</string>
+    <string name="home_choose_restaurant">Choose a restaurant</string>
     <string name="home_restaurant_poor">Restaurant \"Poor\"</string>
     <string name="home_restaurant_poorer">Restaurant \"Poorer\"</string>
     <string name="home_restaurant_the_poorest">Restaurant \"The poorest\"</string>
@@ -16,6 +16,9 @@
     <string name="new_restaurant">New restaurant</string>
     <string name="restaurant_name">Restaurant name</string>
     <string name="create_restaurant">Add restaurant</string>
+    <string name="forgot_password_phone_authentication"><u>Forgot password (Phone authentication)</u></string>
+    <string name="forgot_password_email_authentication"><u>Forgot password (Email authentication)</u></string>
+    <string name="send_the_code"><u>Send the code</u></string>
 
 
 </resources>

@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
     tools:context=".fragments.HomeFragment">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_restaurants"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </androidx.recyclerview.widget.RecyclerView>
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
 
 
     <ImageView
@@ -29,58 +19,96 @@
         app:srcCompat="@drawable/triangle" />
 
 
-        <TextView
-            android:id="@+id/home_header"
-            android:layout_width="235dp"
-            android:layout_height="86dp"
-            android:layout_marginTop="68dp"
-            android:layout_marginEnd="20dp"
-            android:fontFamily="@font/fredokaone"
-            android:text="@string/home_choose_restaurant"
-            android:textAlignment="textEnd"
-            android:textColor="@color/secondary_green"
-            android:textSize="34sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/home_header"
+        android:layout_width="235dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/fredokaone"
+        android:text="@string/home_choose_restaurant"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondary_green"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/home_new_rest"
-            android:layout_width="133dp"
-            android:layout_height="69dp"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="440dp"
-            android:background="@drawable/home_bt_custom"
-            android:text="@string/home_new_rest"
-            android:textColor="@color/secondary_green"
-            android:textSize="15sp"
-            app:backgroundTint="@null"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.919"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/home_header">
+    <Button
+        android:id="@+id/home_new_rest"
+        android:layout_width="133dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/home_bt_custom"
+        android:text="@string/home_new_rest"
+        android:textColor="@color/secondary_green"
+        android:textSize="15sp"
+        app:backgroundTint="@null"
+        app:icon="@drawable/ic_plus"
+        app:iconPadding="10dp"
+        app:iconTint="@color/secondary_green"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
 
-        </Button>
+    </Button>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="137dp"
-            android:layout_marginTop="150dp"
-            android:layout_marginEnd="137dp"
-            android:layout_marginBottom="8dp"
-            android:text="@string/developed_by"
-            android:textAlignment="center"
-            android:textColor="#8FD14E"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/home_new_rest"
-            app:layout_constraintVertical_bias="0.959">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/developed_by"
+        android:textAlignment="center"
+        android:textColor="#8FD14E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        </TextView>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </TextView>
 
-</FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_restaurants"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_header">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/home_loading_anim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/home_new_rest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_header"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/animation2" />
+
+    <TextView
+        android:id="@+id/home_signout_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/robotoflex"
+        android:text="Sign out"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/home_new_rest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/home_new_rest" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

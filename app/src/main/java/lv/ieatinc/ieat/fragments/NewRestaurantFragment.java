@@ -15,6 +15,9 @@ import android.widget.ImageView;
 
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.lang.invoke.ConstantCallSite;
+
+import lv.ieatinc.ieat.Constants;
 import lv.ieatinc.ieat.R;
 
 
@@ -30,17 +33,16 @@ public class NewRestaurantFragment extends Fragment {
 
     public NewRestaurantFragment() {
         super(R.layout.fragment_new_restaurant);
-
     }
 
-    //TODO finish with firebase
+    //TODO: finish with firebase
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         Log.i(TAG, "START");
 
         mAuth = FirebaseAuth.getInstance();
 
-        ImageView back_arrow = view.findViewById(R.id.new_rest_back_arrow);
+        ImageView back_arrow = getActivity().findViewById(R.id.new_rest_back_arrow);
         back_arrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,14 +50,14 @@ public class NewRestaurantFragment extends Fragment {
                 getActivity().getSupportFragmentManager().popBackStack();
             }
         });
-        newRestButton = view.findViewById(R.id.Signup_button);
+
+        newRestButton = getActivity().findViewById(R.id.NewRestaurant_button);
         newRestButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 restName = getView().findViewById(R.id.NewRestaurant_rest_name);
                 restRegNumber = getView().findViewById(R.id.NewRestaurant_reg_number);
                 restAddress = getView().findViewById(R.id.NewRestaurant_address);
-                newRestButton = getView().findViewById(R.id.NewRestaurant_button);
 
                 final String name = restName.getText().toString().trim();
                 final String regNumber = restRegNumber.getText().toString().trim();
@@ -68,7 +70,7 @@ public class NewRestaurantFragment extends Fragment {
                 }
 
                 if (!regNumber.isEmpty()){
-                    if(regNumber.length()  < 11){
+                    if(regNumber.length()  < Constants.MIN_REG_NUMBER_LENGTH){
                         restRegNumber.setError("Registration number is too short");
                         restRegNumber.requestFocus();
                         return;
@@ -79,12 +81,12 @@ public class NewRestaurantFragment extends Fragment {
                     restRegNumber.requestFocus();
                     return;
                 }
+
                 if (address.isEmpty()){
                     restAddress.setError("Restaurant name is empty");
                     restAddress.requestFocus();
                     return;
                 }
-
             }
         });
     }

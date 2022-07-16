@@ -2,6 +2,7 @@ package lv.ieatinc.ieat.fragments;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.IntentSender;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Patterns;
@@ -16,9 +17,12 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
 import com.google.android.gms.auth.api.identity.BeginSignInRequest;
+import com.google.android.gms.auth.api.identity.BeginSignInResult;
 import com.google.android.gms.auth.api.identity.Identity;
 import com.google.android.gms.auth.api.identity.SignInClient;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -35,10 +39,13 @@ import lv.ieatinc.ieat.R;
 
 public class LoginFragment extends Fragment {
     public final String TAG = "LOGIN FRAGMENT";
-    private String server_client_Id = "";
+    private final String server_client_Id = "93658957684-6h9j4k9u0c5gvrp2te7nlhrconct7nn5.apps.googleusercontent.com";
     private SignInClient oneTapClient;
     private BeginSignInRequest signInRequest;
     FirebaseAuth mAuth;
+
+    private static final int REQ_ONE_TAP = 2;  // Can be any integer unique to the Activity.
+    private boolean showOneTapUI = true;
 
     public LoginFragment() {
         super(R.layout.login_fragment);
@@ -52,12 +59,12 @@ public class LoginFragment extends Fragment {
 
         // Uncomment this when you want the app to skip login, since logged in users save on device
         // This way you have to log in only once
-//        FirebaseUser currentUser = mAuth.getCurrentUser();
-//        if(currentUser != null){
-//            Intent intent = new Intent(getActivity(), BaseActivity.class);
-//            startActivity(intent);
-//            getActivity().finish();
-//        }
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if(currentUser != null){
+            Intent intent = new Intent(getActivity(), BaseActivity.class);
+            startActivity(intent);
+            getActivity().finish();
+        }
 
         Button login = view.findViewById(R.id.login_login_button);
         login.setOnClickListener(new View.OnClickListener() {
@@ -110,7 +117,7 @@ public class LoginFragment extends Fragment {
         login_with_google.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                oneTapClient = Identity.getSignInClient(activity);
+                oneTapClient = Identity.getSignInClient(getActivity());
                 signInRequest = BeginSignInRequest.builder()
                         .setPasswordRequestOptions(BeginSignInRequest.PasswordRequestOptions.builder()
                                 .setSupported(true)
@@ -122,6 +129,27 @@ public class LoginFragment extends Fragment {
                                 .build())
                         .setAutoSelectEnabled(true)
                         .build();
+
+                oneTapClient.beginSignIn(signInRequest)
+                        .addOnSuccessListener(new OnSuccessListener<BeginSignInResult>() {
+                            @Override
+                            public void onSuccess(BeginSignInResult result) {
+                                try {
+                                    startIntentSenderForResult(
+                                            result.getPendingIntent().getIntentSender(), REQ_ONE_TAP,
+                                            null, 0, 0, 0, null);
+                                } catch (IntentSender.SendIntentException e) {
+                                    Log.e(TAG, "Couldn't start One Tap UI: " + e.getLocalizedMessage());
+                                }
+                            }
+                        })
+                        .addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Toast.makeText(getContext(), "No account has been found.", Toast.LENGTH_SHORT).show();
+                                Log.d(TAG, e.getLocalizedMessage());
+                            }
+                        });
             }
         });
 

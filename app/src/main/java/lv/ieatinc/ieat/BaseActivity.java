@@ -14,11 +14,5 @@ public class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.base_activity);
         getSupportActionBar().hide();
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .setReorderingAllowed(true)
-                    .add(R.id.baseFragmentContainer, HomeFragment.class, null)
-                    .commit();
-        }
     }
 }

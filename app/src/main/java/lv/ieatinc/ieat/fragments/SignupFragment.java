@@ -1,11 +1,13 @@
 package lv.ieatinc.ieat.fragments;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.util.Log;
 import android.util.Patterns;
@@ -20,10 +22,17 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.auth.User;
 
+import java.util.HashMap;
+import java.util.Map;
+
+import lv.ieatinc.ieat.BaseActivity;
 import lv.ieatinc.ieat.Constants;
 import lv.ieatinc.ieat.R;
+import lv.ieatinc.ieat.adapters.RestaurantListAdapter;
+import lv.ieatinc.ieat.utilities.FirebaseDB;
 
 
 public class SignupFragment extends Fragment {
@@ -143,14 +152,38 @@ public class SignupFragment extends Fragment {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            FirebaseFirestore db = FirebaseFirestore.getInstance();
+                            Map<String, String> data = new HashMap<String, String>();
+                            data.put("access", "Manager");
+
                             Log.d(TAG, "createUserWithEmail:success");
+
                             FirebaseUser user = mAuth.getCurrentUser();
-                            Toast.makeText(getContext(), "User created!",
-                                    Toast.LENGTH_SHORT).show();
+
+                            FirebaseDB.addUser(new FirebaseDB.AddUserCallback() {
+                                @Override
+                                public void onComplete(Boolean status) {
+                                    if(status) {
+                                        Toast.makeText(getContext(), "User created!",
+                                                Toast.LENGTH_SHORT).show();
+                                    } else {
+                                        user.delete()
+                                                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                    @Override
+                                                    public void onComplete(@NonNull Task<Void> task) {
+                                                        Toast.makeText(getContext(), "Unable to create user",
+                                                                Toast.LENGTH_LONG).show();
+                                                    }
+                                                });
+                                    }
+                                }
+                            }, db, user.getUid(), data);
+                            Intent intent = new Intent(getActivity(), BaseActivity.class);
+                            startActivity(intent);
+                            getActivity().finish();
                         } else {
-                            // If sign in fails, display a message to the user.
                             Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                            Toast.makeText(getContext(), "Authentication failed.",
+                            Toast.makeText(getContext(), "This email already exists.",
                                     Toast.LENGTH_SHORT).show();
                         }
                     }
