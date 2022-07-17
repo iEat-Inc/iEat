@@ -24,10 +24,11 @@ import lv.ieatinc.ieat.R;
 import lv.ieatinc.ieat.adapters.RestaurantListAdapter;
 import lv.ieatinc.ieat.utilities.FirebaseDB;
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment implements RestaurantListAdapter.OnClickListener {
     public final String TAG = "HOME FRAGMENT";
     private LottieAnimationView loading;
     private RecyclerView restaurantsList;
+    private TextView no_restaurants_found;
 
     public HomeFragment() {
         super(R.layout.fragment_home);
@@ -42,19 +43,24 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         loading = view.findViewById(R.id.home_loading_anim);
         restaurantsList = view.findViewById(R.id.home_restaurants);
+        no_restaurants_found = view.findViewById(R.id.home_empty_list_text);
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
         FirebaseDB.getRestaurants(new FirebaseDB.GetRestaurantCallback() {
             @Override
-            public void onCallback(HashMap<Integer, Object> data) {
+            public void onCallback(HashMap<String, Object> data) {
                 Log.i(TAG, "Restaurants called back");
-                loading.setVisibility(View.GONE);
-                restaurantsList.setVisibility(View.VISIBLE);
+                if (!data.isEmpty()) {
+                    loading.setVisibility(View.GONE);
+                    restaurantsList.setVisibility(View.VISIBLE);
 
-                restaurantsList.setLayoutManager(new LinearLayoutManager(view.getContext()));
-//                restaurantsList.setHasFixedSize(true);
-                RestaurantListAdapter restaurantListAdapter = new RestaurantListAdapter(data);
-                restaurantsList.setAdapter(restaurantListAdapter);
+                    restaurantsList.setLayoutManager(new LinearLayoutManager(view.getContext()));
+                    RestaurantListAdapter restaurantListAdapter = new RestaurantListAdapter(data);
+                    restaurantsList.setAdapter(restaurantListAdapter);
+                } else {
+                    loading.setVisibility(View.GONE);
+                    no_restaurants_found.setVisibility(View.VISIBLE);
+                }
             }
         }, db);
 
@@ -81,5 +87,15 @@ public class HomeFragment extends Fragment {
                         .commit();
             }
         });
+    }
+
+    @Override
+    public void onClick(int position) {
+        getActivity().getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.baseFragmentContainer, NewRestaurantFragment.class, null)
+                .setReorderingAllowed(true)
+                .addToBackStack("RestaurantBackStack")
+                .commit();
     }
 }

@@ -12,13 +12,19 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FieldValue;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.lang.invoke.ConstantCallSite;
+import java.util.HashMap;
+import java.util.Map;
 
 import lv.ieatinc.ieat.Constants;
 import lv.ieatinc.ieat.R;
+import lv.ieatinc.ieat.utilities.FirebaseDB;
 
 
 public class NewRestaurantFragment extends Fragment {
@@ -29,6 +35,7 @@ public class NewRestaurantFragment extends Fragment {
     EditText restAddress;
     Button newRestButton;
     private FirebaseAuth mAuth;
+    private FirebaseFirestore db;
 
 
     public NewRestaurantFragment() {
@@ -39,7 +46,7 @@ public class NewRestaurantFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         Log.i(TAG, "START");
-
+        db = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
 
         ImageView back_arrow = getActivity().findViewById(R.id.new_rest_back_arrow);
@@ -87,6 +94,24 @@ public class NewRestaurantFragment extends Fragment {
                     restAddress.requestFocus();
                     return;
                 }
+
+                // Creating a map with data to pass to db
+                Map<String, String> data = new HashMap<String, String>();
+                data.put("Name", name);
+                data.put("RegNumber", regNumber);
+                data.put("Address", address);
+
+                FirebaseDB.addRestaurant(new FirebaseDB.AddRestaurantCallback() {
+                    @Override
+                    public void onComplete(Boolean status) {
+                        if(status) {
+                            getActivity().getSupportFragmentManager().popBackStack();
+                        } else {
+                            Toast.makeText(getContext(), "Failed to create a restaurant",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }, db, data);
             }
         });
     }

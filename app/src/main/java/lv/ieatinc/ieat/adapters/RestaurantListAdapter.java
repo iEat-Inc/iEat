@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.json.JSONException;
@@ -18,9 +19,10 @@ import java.util.List;
 import java.util.Map;
 
 import lv.ieatinc.ieat.R;
+import lv.ieatinc.ieat.fragments.ForgotPasswordFragment;
 
 public class RestaurantListAdapter extends RecyclerView.Adapter<RestaurantListAdapter.ViewHolder>{
-    private HashMap<Integer, Object> localDataSet;
+    private HashMap<String, Object> localDataSet;
     private final String TAG = "RESTAURANT LIST ADAPTER";
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -37,7 +39,7 @@ public class RestaurantListAdapter extends RecyclerView.Adapter<RestaurantListAd
         }
     }
 
-    public RestaurantListAdapter(HashMap<Integer, Object> dataSet) {
+    public RestaurantListAdapter(HashMap<String, Object> dataSet) {
         localDataSet = dataSet;
     }
 
@@ -51,12 +53,25 @@ public class RestaurantListAdapter extends RecyclerView.Adapter<RestaurantListAd
 
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, final int position) {
-        Map<String, String> data = (Map<String, String>) localDataSet.get(position + 1);
+        // Since we don't know the key, we get all the keys in order, create an array from them
+        // and get the key at the position we need
+        Object key = localDataSet.keySet().toArray()[position];
+        Map<String, String> data = (Map<String, String>) localDataSet.get(key);
         viewHolder.getButton().setText(data.get("Name"));
+        viewHolder.getButton().setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 
     @Override
     public int getItemCount() {
         return localDataSet.size();
+    }
+
+    public interface OnClickListener {
+        void onClick(int position);
     }
 }
