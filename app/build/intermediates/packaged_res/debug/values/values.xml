@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="employee_types">
+        <item>Manager</item>
+        <item>Employee</item>
+    </string-array>
     <color name="black">#FF000000</color>
     <color name="primary_green">#8FD14F</color>
     <color name="purple_200">#FFBB86FC</color>
@@ -9,12 +13,22 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <string name="add_shelf">Add shelf</string>
+    <string name="add_storage">Add storage</string>
     <string name="app_name">iEat</string>
+    <string name="create_a_storage">Create storage</string>
     <string name="create_account">Create account</string>
+    <string name="create_employee">Create employee</string>
     <string name="create_restaurant">Add restaurant</string>
+    <string name="create_shelf">Create shelf</string>
     <string name="create_user">CREATE USER</string>
     <string name="default_web_client_id" translatable="false">93658957684-2ldhodr5u3kavlrk58gicu439rmtj562.apps.googleusercontent.com</string>
     <string name="developed_by">Developed by iEat Inc.</string>
+    <string name="employee_confirm_password">Confirm password</string>
+    <string name="employee_email">Email</string>
+    <string name="employee_password">Password</string>
+    <string name="employee_phone_number">Phone number</string>
+    <string name="employee_username">Username</string>
     <string name="enter_confirm_password">Confirm password</string>
     <string name="enter_email">Email</string>
     <string name="enter_name">Username</string>
@@ -37,6 +51,9 @@
     <string name="project_id" translatable="false">ieat-40f8f</string>
     <string name="restaurant_name">Restaurant name</string>
     <string name="send_the_code"><u>Send the code</u></string>
+    <string name="storage_name">Storage name</string>
+    <string name="storage_size">Storage size</string>
+    <string name="storage_tag">Storage tag</string>
     <style name="Theme.IEat" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/primary_green</item>

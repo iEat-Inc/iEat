@@ -30,6 +30,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.IEat" >
         <activity
+            android:name="lv.ieatinc.ieat.NewShelfActivity"
+            android:exported="false" />
+        <activity
+            android:name="lv.ieatinc.ieat.NewEmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name="lv.ieatinc.ieat.NewStorageActivity"
+            android:exported="false" />
+        <activity
             android:name="lv.ieatinc.ieat.RestaurantActivity"
             android:exported="false" />
         <activity

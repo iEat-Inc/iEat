@@ -29,7 +29,7 @@
 17-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:26:22-107
 18
 19    <application
-19-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:6:5-30:19
+19-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:6:5-39:19
 20        android:allowBackup="true"
 20-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:7:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -53,242 +53,260 @@
 31-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:14:9-42
 32        <activity
 32-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:16:9-18:40
-33            android:name="lv.ieatinc.ieat.RestaurantActivity"
-33-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:17:13-47
+33            android:name="lv.ieatinc.ieat.NewShelfActivity"
+33-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:17:13-45
 34            android:exported="false" />
 34-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:18:13-37
 35        <activity
-35-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:19:9-27:20
-36            android:name="lv.ieatinc.ieat.MainActivity"
-36-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:20:13-41
-37            android:exported="true" >
-37-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:21:13-36
-38            <intent-filter>
-38-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:22:13-26:29
-39                <action android:name="android.intent.action.MAIN" />
-39-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:23:17-69
-39-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:23:25-66
-40
-41                <category android:name="android.intent.category.LAUNCHER" />
-41-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:25:17-77
-41-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:25:27-74
-42            </intent-filter>
-43        </activity>
-44        <activity android:name="lv.ieatinc.ieat.AuthenticationActivity" />
-44-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:28:9-60
-44-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:28:19-57
-45        <activity android:name="lv.ieatinc.ieat.BaseActivity" />
-45-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:29:9-50
-45-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:29:19-47
-46
-47        <service
-47-->[com.google.firebase:firebase-firestore:24.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcf940a708c04572c7b6b9bc894bc6e8/transformed/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:17:9-23:19
-48            android:name="com.google.firebase.components.ComponentDiscoveryService"
-48-->[com.google.firebase:firebase-firestore:24.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcf940a708c04572c7b6b9bc894bc6e8/transformed/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:18:13-84
-49            android:directBootAware="true"
-49-->[com.google.firebase:firebase-common:20.1.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/4c527e475807bbbcea689d1c883c4c91/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:35:13-43
-50            android:exported="false" >
-50-->[com.google.firebase:firebase-firestore:24.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcf940a708c04572c7b6b9bc894bc6e8/transformed/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:19:13-37
-51            <meta-data
-51-->[com.google.firebase:firebase-firestore:24.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcf940a708c04572c7b6b9bc894bc6e8/transformed/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:20:13-22:85
-52                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-52-->[com.google.firebase:firebase-firestore:24.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcf940a708c04572c7b6b9bc894bc6e8/transformed/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:21:17-111
-53                android:value="com.google.firebase.components.ComponentRegistrar" />
-53-->[com.google.firebase:firebase-firestore:24.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcf940a708c04572c7b6b9bc894bc6e8/transformed/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:22:17-82
-54            <meta-data
-54-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:67:13-69:85
-55                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-55-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:68:17-109
-56                android:value="com.google.firebase.components.ComponentRegistrar" />
-56-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:69:17-82
-57            <meta-data
-57-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/2b7b34ee1f7d9340526bc5d03abafe96/transformed/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:31:13-33:85
-58                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-58-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/2b7b34ee1f7d9340526bc5d03abafe96/transformed/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:32:17-139
-59                android:value="com.google.firebase.components.ComponentRegistrar" />
-59-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/2b7b34ee1f7d9340526bc5d03abafe96/transformed/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:33:17-82
+35-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:19:9-21:40
+36            android:name="lv.ieatinc.ieat.NewEmployeeActivity"
+36-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:20:13-48
+37            android:exported="false" />
+37-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:21:13-37
+38        <activity
+38-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:22:9-24:40
+39            android:name="lv.ieatinc.ieat.NewStorageActivity"
+39-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:23:13-47
+40            android:exported="false" />
+40-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:24:13-37
+41        <activity
+41-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:25:9-27:40
+42            android:name="lv.ieatinc.ieat.RestaurantActivity"
+42-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:26:13-47
+43            android:exported="false" />
+43-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:27:13-37
+44        <activity
+44-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:28:9-36:20
+45            android:name="lv.ieatinc.ieat.MainActivity"
+45-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:29:13-41
+46            android:exported="true" >
+46-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:30:13-36
+47            <intent-filter>
+47-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:31:13-35:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:32:17-69
+48-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:32:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:34:17-77
+50-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:34:27-74
+51            </intent-filter>
+52        </activity>
+53        <activity android:name="lv.ieatinc.ieat.AuthenticationActivity" />
+53-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:37:9-60
+53-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:37:19-57
+54        <activity android:name="lv.ieatinc.ieat.BaseActivity" />
+54-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:38:9-50
+54-->/Users/alinaverkholomova/Desktop/iEat/iEat/app/src/main/AndroidManifest.xml:38:19-47
+55
+56        <service
+56-->[com.google.firebase:firebase-firestore:24.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcf940a708c04572c7b6b9bc894bc6e8/transformed/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:17:9-23:19
+57            android:name="com.google.firebase.components.ComponentDiscoveryService"
+57-->[com.google.firebase:firebase-firestore:24.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcf940a708c04572c7b6b9bc894bc6e8/transformed/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:18:13-84
+58            android:directBootAware="true"
+58-->[com.google.firebase:firebase-common:20.1.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/4c527e475807bbbcea689d1c883c4c91/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:35:13-43
+59            android:exported="false" >
+59-->[com.google.firebase:firebase-firestore:24.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcf940a708c04572c7b6b9bc894bc6e8/transformed/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:19:13-37
 60            <meta-data
-60-->[com.google.firebase:firebase-installations:17.0.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/24ef1cf43f65f2b82de5972319d3d22c/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:18:13-20:85
-61                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-61-->[com.google.firebase:firebase-installations:17.0.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/24ef1cf43f65f2b82de5972319d3d22c/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:19:17-127
+60-->[com.google.firebase:firebase-firestore:24.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcf940a708c04572c7b6b9bc894bc6e8/transformed/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:20:13-22:85
+61                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+61-->[com.google.firebase:firebase-firestore:24.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcf940a708c04572c7b6b9bc894bc6e8/transformed/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:21:17-111
 62                android:value="com.google.firebase.components.ComponentRegistrar" />
-62-->[com.google.firebase:firebase-installations:17.0.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/24ef1cf43f65f2b82de5972319d3d22c/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:20:17-82
-63        </service>
-64
-65        <activity
-65-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:27:9-44:20
-66            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-66-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:28:13-80
-67            android:excludeFromRecents="true"
-67-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:29:13-46
-68            android:exported="true"
-68-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:30:13-36
-69            android:launchMode="singleTask"
-69-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:31:13-44
-70            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-70-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:32:13-72
-71            <intent-filter>
-71-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:33:13-43:29
-72                <action android:name="android.intent.action.VIEW" />
-72-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:17-69
-72-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:25-66
+62-->[com.google.firebase:firebase-firestore:24.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcf940a708c04572c7b6b9bc894bc6e8/transformed/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:22:17-82
+63            <meta-data
+63-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:67:13-69:85
+64                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+64-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:68:17-109
+65                android:value="com.google.firebase.components.ComponentRegistrar" />
+65-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:69:17-82
+66            <meta-data
+66-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/2b7b34ee1f7d9340526bc5d03abafe96/transformed/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:31:13-33:85
+67                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+67-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/2b7b34ee1f7d9340526bc5d03abafe96/transformed/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:32:17-139
+68                android:value="com.google.firebase.components.ComponentRegistrar" />
+68-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/2b7b34ee1f7d9340526bc5d03abafe96/transformed/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:33:17-82
+69            <meta-data
+69-->[com.google.firebase:firebase-installations:17.0.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/24ef1cf43f65f2b82de5972319d3d22c/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:18:13-20:85
+70                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+70-->[com.google.firebase:firebase-installations:17.0.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/24ef1cf43f65f2b82de5972319d3d22c/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:19:17-127
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->[com.google.firebase:firebase-installations:17.0.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/24ef1cf43f65f2b82de5972319d3d22c/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:20:17-82
+72        </service>
 73
-74                <category android:name="android.intent.category.DEFAULT" />
-74-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:17-76
-74-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:27-73
-75                <category android:name="android.intent.category.BROWSABLE" />
-75-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:17-78
-75-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:27-75
-76
-77                <data
-77-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:39:17-42:51
-78                    android:host="firebase.auth"
-78-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:40:21-49
-79                    android:path="/"
-79-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:41:21-37
-80                    android:scheme="genericidp" />
-80-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:42:21-48
-81            </intent-filter>
-82        </activity>
-83        <activity
-83-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:45:9-62:20
-84            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-84-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:46:13-79
-85            android:excludeFromRecents="true"
-85-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:47:13-46
-86            android:exported="true"
-86-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:48:13-36
-87            android:launchMode="singleTask"
-87-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:49:13-44
-88            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-88-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:50:13-72
-89            <intent-filter>
-89-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:51:13-61:29
-90                <action android:name="android.intent.action.VIEW" />
-90-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:17-69
-90-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:25-66
-91
-92                <category android:name="android.intent.category.DEFAULT" />
-92-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:17-76
-92-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:27-73
-93                <category android:name="android.intent.category.BROWSABLE" />
-93-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:17-78
-93-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:27-75
-94
-95                <data
-95-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:39:17-42:51
-96                    android:host="firebase.auth"
-96-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:40:21-49
-97                    android:path="/"
-97-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:41:21-37
-98                    android:scheme="recaptcha" />
-98-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:42:21-48
-99            </intent-filter>
-100        </activity>
-101        <activity
-101-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:23:9-27:75
-102            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-102-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:24:13-93
-103            android:excludeFromRecents="true"
-103-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:25:13-46
-104            android:exported="false"
-104-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:26:13-37
-105            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-105-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:27:13-72
-106        <!--
-107            Service handling Google Sign-In user revocation. For apps that do not integrate with
-108            Google Sign-In, this service will never be started.
-109        -->
-110        <service
-110-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:33:9-37:51
-111            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-111-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:34:13-89
-112            android:exported="true"
-112-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:35:13-36
-113            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-113-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:36:13-107
-114            android:visibleToInstantApps="true" />
-114-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:37:13-48
-115
-116        <provider
-116-->[com.google.firebase:firebase-common:20.1.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/4c527e475807bbbcea689d1c883c4c91/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:26:9-31:39
-117            android:name="com.google.firebase.provider.FirebaseInitProvider"
-117-->[com.google.firebase:firebase-common:20.1.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/4c527e475807bbbcea689d1c883c4c91/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:27:13-77
-118            android:authorities="lv.ieatinc.ieat.firebaseinitprovider"
-118-->[com.google.firebase:firebase-common:20.1.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/4c527e475807bbbcea689d1c883c4c91/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:28:13-72
-119            android:directBootAware="true"
-119-->[com.google.firebase:firebase-common:20.1.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/4c527e475807bbbcea689d1c883c4c91/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:29:13-43
-120            android:exported="false"
-120-->[com.google.firebase:firebase-common:20.1.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/4c527e475807bbbcea689d1c883c4c91/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:30:13-37
-121            android:initOrder="100" />
-121-->[com.google.firebase:firebase-common:20.1.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/4c527e475807bbbcea689d1c883c4c91/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:31:13-36
-122
-123        <activity
-123-->[com.google.android.gms:play-services-base:18.0.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/d67e967cdfca6f90e6fe24d3485c6fcc/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-124            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-124-->[com.google.android.gms:play-services-base:18.0.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/d67e967cdfca6f90e6fe24d3485c6fcc/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-125            android:exported="false"
-125-->[com.google.android.gms:play-services-base:18.0.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/d67e967cdfca6f90e6fe24d3485c6fcc/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-126            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-126-->[com.google.android.gms:play-services-base:18.0.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/d67e967cdfca6f90e6fe24d3485c6fcc/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-127
-128        <receiver
-128-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:29:9-33:20
-129            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-129-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:30:13-85
-130            android:enabled="true"
-130-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:31:13-35
-131            android:exported="false" >
-131-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:32:13-37
-132        </receiver>
-133
-134        <service
-134-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:35:9-38:40
-135            android:name="com.google.android.gms.measurement.AppMeasurementService"
-135-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:36:13-84
-136            android:enabled="true"
-136-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:37:13-35
-137            android:exported="false" />
-137-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:38:13-37
-138        <service
-138-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:39:9-43:72
-139            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-139-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:40:13-87
-140            android:enabled="true"
-140-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:41:13-35
-141            android:exported="false"
-141-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:42:13-37
-142            android:permission="android.permission.BIND_JOB_SERVICE" />
-142-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:43:13-69
-143
-144        <meta-data
-144-->[com.google.android.gms:play-services-basement:18.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/a2af8416f708615a8c17cff4070a18a4/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
-145            android:name="com.google.android.gms.version"
-145-->[com.google.android.gms:play-services-basement:18.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/a2af8416f708615a8c17cff4070a18a4/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
-146            android:value="@integer/google_play_services_version" />
-146-->[com.google.android.gms:play-services-basement:18.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/a2af8416f708615a8c17cff4070a18a4/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
-147
-148        <provider
-148-->[androidx.emoji2:emoji2:1.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcd6fcd718cc53bba4e8abba7d0181b7/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
-149            android:name="androidx.startup.InitializationProvider"
-149-->[androidx.emoji2:emoji2:1.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcd6fcd718cc53bba4e8abba7d0181b7/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
-150            android:authorities="lv.ieatinc.ieat.androidx-startup"
-150-->[androidx.emoji2:emoji2:1.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcd6fcd718cc53bba4e8abba7d0181b7/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
-151            android:exported="false" >
-151-->[androidx.emoji2:emoji2:1.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcd6fcd718cc53bba4e8abba7d0181b7/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
-152            <meta-data
-152-->[androidx.emoji2:emoji2:1.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcd6fcd718cc53bba4e8abba7d0181b7/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
-153                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-153-->[androidx.emoji2:emoji2:1.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcd6fcd718cc53bba4e8abba7d0181b7/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
-154                android:value="androidx.startup" />
-154-->[androidx.emoji2:emoji2:1.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcd6fcd718cc53bba4e8abba7d0181b7/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
-155            <meta-data
-155-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/2bd7de0a461bb241748c5b688ac78698/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
-156                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-156-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/2bd7de0a461bb241748c5b688ac78698/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
-157                android:value="androidx.startup" />
-157-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/2bd7de0a461bb241748c5b688ac78698/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-158        </provider>
-159    </application>
-160
-161</manifest>
+74        <activity
+74-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:27:9-44:20
+75            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+75-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:28:13-80
+76            android:excludeFromRecents="true"
+76-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:29:13-46
+77            android:exported="true"
+77-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:30:13-36
+78            android:launchMode="singleTask"
+78-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:31:13-44
+79            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+79-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:32:13-72
+80            <intent-filter>
+80-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:33:13-43:29
+81                <action android:name="android.intent.action.VIEW" />
+81-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:17-69
+81-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:25-66
+82
+83                <category android:name="android.intent.category.DEFAULT" />
+83-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:17-76
+83-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:27-73
+84                <category android:name="android.intent.category.BROWSABLE" />
+84-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:17-78
+84-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:27-75
+85
+86                <data
+86-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:39:17-42:51
+87                    android:host="firebase.auth"
+87-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:40:21-49
+88                    android:path="/"
+88-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:41:21-37
+89                    android:scheme="genericidp" />
+89-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:42:21-48
+90            </intent-filter>
+91        </activity>
+92        <activity
+92-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:45:9-62:20
+93            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+93-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:46:13-79
+94            android:excludeFromRecents="true"
+94-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:47:13-46
+95            android:exported="true"
+95-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:48:13-36
+96            android:launchMode="singleTask"
+96-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:49:13-44
+97            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+97-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:50:13-72
+98            <intent-filter>
+98-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:51:13-61:29
+99                <action android:name="android.intent.action.VIEW" />
+99-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:17-69
+99-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:25-66
+100
+101                <category android:name="android.intent.category.DEFAULT" />
+101-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:17-76
+101-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:27-73
+102                <category android:name="android.intent.category.BROWSABLE" />
+102-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:17-78
+102-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:27-75
+103
+104                <data
+104-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:39:17-42:51
+105                    android:host="firebase.auth"
+105-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:40:21-49
+106                    android:path="/"
+106-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:41:21-37
+107                    android:scheme="recaptcha" />
+107-->[com.google.firebase:firebase-auth:21.0.6] /Users/alinaverkholomova/.gradle/caches/transforms-3/1763ee1627ba5e257e52d6793034597f/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:42:21-48
+108            </intent-filter>
+109        </activity>
+110        <activity
+110-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:23:9-27:75
+111            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+111-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:24:13-93
+112            android:excludeFromRecents="true"
+112-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:25:13-46
+113            android:exported="false"
+113-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:26:13-37
+114            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+114-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:27:13-72
+115        <!--
+116            Service handling Google Sign-In user revocation. For apps that do not integrate with
+117            Google Sign-In, this service will never be started.
+118        -->
+119        <service
+119-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:33:9-37:51
+120            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+120-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:34:13-89
+121            android:exported="true"
+121-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:35:13-36
+122            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+122-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:36:13-107
+123            android:visibleToInstantApps="true" />
+123-->[com.google.android.gms:play-services-auth:20.2.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/9aa98a3c56ea542935d2dcd64872aa5c/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:37:13-48
+124
+125        <provider
+125-->[com.google.firebase:firebase-common:20.1.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/4c527e475807bbbcea689d1c883c4c91/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:26:9-31:39
+126            android:name="com.google.firebase.provider.FirebaseInitProvider"
+126-->[com.google.firebase:firebase-common:20.1.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/4c527e475807bbbcea689d1c883c4c91/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:27:13-77
+127            android:authorities="lv.ieatinc.ieat.firebaseinitprovider"
+127-->[com.google.firebase:firebase-common:20.1.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/4c527e475807bbbcea689d1c883c4c91/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:28:13-72
+128            android:directBootAware="true"
+128-->[com.google.firebase:firebase-common:20.1.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/4c527e475807bbbcea689d1c883c4c91/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:29:13-43
+129            android:exported="false"
+129-->[com.google.firebase:firebase-common:20.1.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/4c527e475807bbbcea689d1c883c4c91/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:30:13-37
+130            android:initOrder="100" />
+130-->[com.google.firebase:firebase-common:20.1.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/4c527e475807bbbcea689d1c883c4c91/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:31:13-36
+131
+132        <activity
+132-->[com.google.android.gms:play-services-base:18.0.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/d67e967cdfca6f90e6fe24d3485c6fcc/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+133            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+133-->[com.google.android.gms:play-services-base:18.0.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/d67e967cdfca6f90e6fe24d3485c6fcc/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+134            android:exported="false"
+134-->[com.google.android.gms:play-services-base:18.0.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/d67e967cdfca6f90e6fe24d3485c6fcc/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+135            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+135-->[com.google.android.gms:play-services-base:18.0.1] /Users/alinaverkholomova/.gradle/caches/transforms-3/d67e967cdfca6f90e6fe24d3485c6fcc/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+136
+137        <receiver
+137-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:29:9-33:20
+138            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+138-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:30:13-85
+139            android:enabled="true"
+139-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:31:13-35
+140            android:exported="false" >
+140-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:32:13-37
+141        </receiver>
+142
+143        <service
+143-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:35:9-38:40
+144            android:name="com.google.android.gms.measurement.AppMeasurementService"
+144-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:36:13-84
+145            android:enabled="true"
+145-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:37:13-35
+146            android:exported="false" />
+146-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:38:13-37
+147        <service
+147-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:39:9-43:72
+148            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+148-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:40:13-87
+149            android:enabled="true"
+149-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:41:13-35
+150            android:exported="false"
+150-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:42:13-37
+151            android:permission="android.permission.BIND_JOB_SERVICE" />
+151-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/67cd977455e5b8ca058a5b5a78757afb/transformed/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:43:13-69
+152
+153        <meta-data
+153-->[com.google.android.gms:play-services-basement:18.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/a2af8416f708615a8c17cff4070a18a4/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+154            android:name="com.google.android.gms.version"
+154-->[com.google.android.gms:play-services-basement:18.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/a2af8416f708615a8c17cff4070a18a4/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+155            android:value="@integer/google_play_services_version" />
+155-->[com.google.android.gms:play-services-basement:18.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/a2af8416f708615a8c17cff4070a18a4/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+156
+157        <provider
+157-->[androidx.emoji2:emoji2:1.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcd6fcd718cc53bba4e8abba7d0181b7/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+158            android:name="androidx.startup.InitializationProvider"
+158-->[androidx.emoji2:emoji2:1.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcd6fcd718cc53bba4e8abba7d0181b7/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+159            android:authorities="lv.ieatinc.ieat.androidx-startup"
+159-->[androidx.emoji2:emoji2:1.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcd6fcd718cc53bba4e8abba7d0181b7/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+160            android:exported="false" >
+160-->[androidx.emoji2:emoji2:1.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcd6fcd718cc53bba4e8abba7d0181b7/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+161            <meta-data
+161-->[androidx.emoji2:emoji2:1.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcd6fcd718cc53bba4e8abba7d0181b7/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+162                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+162-->[androidx.emoji2:emoji2:1.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcd6fcd718cc53bba4e8abba7d0181b7/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+163                android:value="androidx.startup" />
+163-->[androidx.emoji2:emoji2:1.0.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/fcd6fcd718cc53bba4e8abba7d0181b7/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+164            <meta-data
+164-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/2bd7de0a461bb241748c5b688ac78698/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+165                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+165-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/2bd7de0a461bb241748c5b688ac78698/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+166                android:value="androidx.startup" />
+166-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/alinaverkholomova/.gradle/caches/transforms-3/2bd7de0a461bb241748c5b688ac78698/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+167        </provider>
+168    </application>
+169
+170</manifest>
