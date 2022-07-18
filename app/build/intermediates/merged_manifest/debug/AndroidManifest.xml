@@ -30,6 +30,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.IEat" >
         <activity
+            android:name="lv.ieatinc.ieat.RestaurantActivity"
+            android:exported="false" />
+        <activity
             android:name="lv.ieatinc.ieat.MainActivity"
             android:exported="true" >
             <intent-filter>
@@ -38,8 +41,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="lv.ieatinc.ieat.BaseActivity" >
-        </activity>
+        <activity android:name="lv.ieatinc.ieat.AuthenticationActivity" />
+        <activity android:name="lv.ieatinc.ieat.BaseActivity" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

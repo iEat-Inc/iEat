@@ -2539,6 +2539,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_plus
 drawable logo_dark_green
 drawable logo_light_green
+drawable logo_white
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2595,6 +2596,10 @@ id CTRL
 id FUNCTION
 id META
 id NO_DEBUG
+id NewRestaurant_address
+id NewRestaurant_button
+id NewRestaurant_reg_number
+id NewRestaurant_rest_name
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2687,7 +2692,11 @@ id autoCompleteToStart
 id automatic
 id background_triangle
 id background_triangle2
+id background_triangle3
+id background_triangle4
+id background_triangle5
 id barrier
+id baseFragmentContainer
 id baseline
 id beginOnFirstDraw
 id beginning
@@ -2813,7 +2822,7 @@ id fp_header
 id fp_new_password_input
 id fp_phone_code_input
 id fp_phone_number_input
-id fp_send_email_text
+id fp_send_phone_code_text
 id fp_timer_header_text
 id fp_timer_time_text
 id fragmentContainer
@@ -2834,11 +2843,12 @@ id header_title
 id hideable
 id home
 id homeAsUp
+id home_empty_list_text
 id home_header
+id home_loading_anim
 id home_new_rest
-id home_rest_poor
-id home_rest_poorer
-id home_rest_the_poorest
+id home_restaurants
+id home_signout_text
 id honorRequest
 id horizontal_only
 id icon
@@ -2949,6 +2959,8 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id new_rest_back_arrow
+id new_rest_header
 id noScroll
 id noState
 id none
@@ -2983,6 +2995,7 @@ id radio
 id ratio
 id rectangles
 id restart
+id restaurant_list_item_button
 id reverse
 id reverseSawtooth
 id right
@@ -3020,7 +3033,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
-id signup_back_arrow
+id signup_back_arrow2
 id signup_header
 id sin
 id skipCollapsed
@@ -3080,6 +3093,8 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView2
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3222,6 +3237,8 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_restaurant
+layout authentication_activity
 layout base_activity
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -3243,6 +3260,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout forgot_password_fragment
 layout fragment_home
+layout fragment_new_restaurant
 layout login_fragment
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3298,6 +3316,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout restaurant_list_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -3324,6 +3343,7 @@ menu example_menu2
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw animation2
 raw keep
 raw logoanimation
 string abc_action_bar_home_description
@@ -3383,6 +3403,7 @@ string common_signin_button_text
 string common_signin_button_text_long
 string copy_toast_msg
 string create_account
+string create_restaurant
 string create_user
 string default_web_client_id
 string developed_by
@@ -3398,11 +3419,14 @@ string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
 string forgot_password
+string forgot_password_email_authentication
+string forgot_password_phone_authentication
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string home_choose_restaurant
 string home_new_rest
@@ -3483,13 +3507,16 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
+string new_restaurant
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string project_id
+string restaurant_name
 string search_menu_title
+string send_the_code
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

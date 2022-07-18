@@ -4,7 +4,7 @@
             "outputFile": "lv.ieatinc.ieat.app-mergeDebugResources-30:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\JDK\\caches\\transforms-3\\12a739d4a1f4d0799a8dabc3595aa692\\transformed\\material-1.6.1\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
+                    "source": "/Users/alinaverkholomova/.gradle/caches/transforms-3/12a739d4a1f4d0799a8dabc3595aa692/transformed/material-1.6.1/res/values-h550dp-port-v13/values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
