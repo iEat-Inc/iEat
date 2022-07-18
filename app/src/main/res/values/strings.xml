@@ -19,13 +19,22 @@
     <string name="forgot_password_phone_authentication"><u>Forgot password (Phone authentication)</u></string>
     <string name="forgot_password_email_authentication"><u>Forgot password (Email authentication)</u></string>
     <string name="send_the_code"><u>Send the code</u></string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="create_a_storage">Create a storage</string>
     <string name="storage_name">Storage name</string>
     <string name="storage_tag">Storage tag</string>
     <string name="storage_size">Storage size</string>
     <string name="add_storage">Add storage</string>
+    <string name="create_employee">Create employee</string>
+    <string name="employee_username">Username</string>
+    <string name="employee_email">Email</string>
+    <string name="employee_phone_number">Phone number</string>
+    <string name="employee_password">Password</string>
+    <string name="employee_confirm_password">Confirm password</string>
+    <string-array name="employee_types">
+        <item>Manager</item>
+        <item>Employee</item>
+    </string-array>
 
 
 </resources>
