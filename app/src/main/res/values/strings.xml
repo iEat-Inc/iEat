@@ -33,6 +33,8 @@
     <string name="employee_confirm_password">Confirm password</string>
     <string name="create_shelf">Create shelf</string>
     <string name="add_shelf">Add shelf</string>
+    <string name="storage1">Storage1</string>
+    <string name="new_shelf">New shelf</string>
     <string-array name="employee_types">
         <item>Manager</item>
         <item>Employee</item>
