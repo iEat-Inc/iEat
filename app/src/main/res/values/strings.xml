@@ -35,9 +35,19 @@
     <string name="add_shelf">Add shelf</string>
     <string name="storage1">Storage1</string>
     <string name="new_shelf">New shelf</string>
+    <string name="add_product">Add product</string>
+    <string name="product_name">Product name</string>
+    <string name="expiration_date">Expiration date</string>
+    <string name="amount">Amount</string>
     <string-array name="employee_types">
         <item>Manager</item>
         <item>Employee</item>
+    </string-array>
+    <string-array name="units_of_measurements">
+        <item>kg</item>
+        <item>l</item>
+        <item>pc</item>
+
     </string-array>
 
 

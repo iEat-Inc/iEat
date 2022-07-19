@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewProductActivity">
+
+
+        <ImageView
+            android:id="@+id/add_product_background_triangle"
+            android:layout_width="677dp"
+            android:layout_height="672dp"
+            android:layout_marginTop="-230dp"
+            android:layout_marginEnd="-300dp"
+            android:rotation="65"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/triangle" />
+
+        <TextView
+            android:id="@+id/add_product_header"
+            android:layout_width="233dp"
+            android:layout_height="86dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/fredokaone"
+            android:text="@string/add_product"
+            android:textAlignment="textEnd"
+            android:textColor="@color/secondary_green"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/add_product_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            app:layout_constraintBottom_toBottomOf="@+id/add_product_header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/add_product_header"
+            app:srcCompat="@drawable/ic_left_arrow" />
+
+        <EditText
+            android:id="@+id/add_product_name_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/et_custom"
+            android:ems="10"
+            android:fontFamily="@font/robotoflex"
+            android:hint="@string/product_name"
+            android:inputType="textNoSuggestions"
+            android:minHeight="48dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_product_header" />
+
+        <EditText
+            android:id="@+id/add_product_exp_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/et_custom"
+            android:ems="10"
+            android:fontFamily="@font/robotoflex"
+            android:hint="@string/expiration_date"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_product_name_input" />
+
+        <EditText
+            android:id="@+id/add_product_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/et_custom"
+            android:ems="10"
+            android:fontFamily="@font/robotoflex"
+            android:hint="@string/amount"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_product_exp_date" />
+
+
+        <Spinner
+            android:id="@+id/add_product_spinner_types"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/et_custom"
+            android:fontFamily="@font/robotoflex"
+            android:minHeight="48dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp"
+            android:spinnerMode="dropdown"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_product_amount"
+            app:layout_constraintVertical_bias="0.012">
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/add_product_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/bt_custom"
+            android:fontFamily="@font/robotoflex"
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp"
+            android:paddingRight="32dp"
+            android:paddingBottom="8dp"
+            android:text="Add product"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:icon="@drawable/reset_password"
+            app:iconPadding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_product_spinner_types" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="137dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="137dp"
+            android:text="@string/developed_by"
+            android:textAlignment="center"
+            android:textColor="#8FD14E"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_product_button">
+
+        </TextView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
