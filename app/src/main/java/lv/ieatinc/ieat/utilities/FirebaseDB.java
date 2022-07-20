@@ -51,7 +51,6 @@ public class FirebaseDB {
         HashMap<String, Object> documents = new HashMap<>();
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
         String UID = mAuth.getCurrentUser().getUid();
-        Log.i(TAG, UID);
 
         db.collection(Constants.DATABASE_COLLECTION)
                 .document(Constants.USER_DOCUMENT)
@@ -107,7 +106,62 @@ public class FirebaseDB {
                 });
     }
 
+    public static void getStorages(GetStorageCallback onCallback, FirebaseFirestore db, String restaurantId) {
+        HashMap<String, Object> documents = new HashMap<>();
+
+        Log.e(TAG, Constants.DATABASE_COLLECTION + " -> " + Constants.RESTAURANT_DOCUMENT + " -> " + Constants.RESTAURANT_COLLECTION + " -> " + restaurantId + " -> " + Constants.STORAGE_COLLECTION);
+
+        db.collection(Constants.DATABASE_COLLECTION)
+                .document(Constants.RESTAURANT_DOCUMENT)
+                .collection(Constants.RESTAURANT_COLLECTION)
+                .document(restaurantId)
+                .collection(Constants.STORAGE_COLLECTION)
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            Log.e(TAG, String.valueOf(task.getResult().size()));
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                documents.put(document.getId(), document.getData());
+                                Log.i(TAG, document.getId() + " =>" + document.getData());
+                            }
+                            onCallback.onCallback(documents);
+                        } else {
+                            Log.e(TAG, "Error getting storages.", task.getException());
+                        }
+                    }
+                });
+
+    }
+
+    public static void getEmployees(GetEmployeeCallback onCallback, FirebaseFirestore db, String restaurantId) {
+        HashMap<String, Object> documents = new HashMap<>();
+
+        db.collection(Constants.DATABASE_COLLECTION)
+                .document(Constants.RESTAURANT_DOCUMENT)
+                .collection(Constants.RESTAURANT_COLLECTION)
+                .document(restaurantId)
+                .collection(Constants.EMPLOYEES_COLLECTION)
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                documents.put(document.getId(), document.getData());
+                            }
+                            onCallback.onCallback(documents);
+                        } else {
+                            Log.w(TAG, "Error getting employees.", task.getException());
+                        }
+                    }
+                });
+    }
+
     public static void addUser(AddUserCallback onCallback, FirebaseFirestore db, String UID, Map<String, String> data) {
+        HashMap<String, Object> documents = new HashMap<>();
+
         db.collection(Constants.DATABASE_COLLECTION)
                 .document(Constants.USER_DOCUMENT)
                 .collection(Constants.USER_COLLECTION)
@@ -136,19 +190,28 @@ public class FirebaseDB {
 
         // Split into 2 statements, so that we can get the auto-generated ID from the statement above
         dr.addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                    @Override
-                    public void onSuccess(DocumentReference documentReference) {
-                        // Registers the restaurant to current user
-                        // Appends user OwnedRestaurants array with current restaurants id
-                        db.collection(Constants.DATABASE_COLLECTION)
-                                .document(Constants.USER_DOCUMENT)
-                                .collection(Constants.USER_COLLECTION)
-                                .document(FirebaseAuth.getInstance().getUid())
-                                .update("OwnedRestaurants", FieldValue.arrayUnion(dr.getResult().getId()));
+            @Override
+            public void onSuccess(DocumentReference documentReference) {
+                // Registers the restaurant to current user
+                // Appends user OwnedRestaurants array with current restaurants id
+                db.collection(Constants.DATABASE_COLLECTION)
+                        .document(Constants.USER_DOCUMENT)
+                        .collection(Constants.USER_COLLECTION)
+                        .document(FirebaseAuth.getInstance().getUid())
+                        .update("OwnedRestaurants", FieldValue.arrayUnion(dr.getResult().getId()));
 
-                        onCallback.onComplete(true);
-                    }
-                })
+                Map<String,Object> id = new HashMap<>();
+                id.put("Id", dr.getResult().getId());
+
+                db.collection(Constants.DATABASE_COLLECTION)
+                        .document(Constants.RESTAURANT_DOCUMENT)
+                        .collection(Constants.RESTAURANT_COLLECTION)
+                        .document(dr.getResult().getId())
+                        .update(id);
+
+                onCallback.onComplete(true);
+            }
+        })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
@@ -158,7 +221,73 @@ public class FirebaseDB {
                 });
     }
 
+    public static void addStorage(AddStorageCallback onCallback, FirebaseFirestore db, String restaurantId, Map<String, String> data) {
+        Task<DocumentReference> dr = db.collection(Constants.DATABASE_COLLECTION)
+                .document(Constants.RESTAURANT_DOCUMENT)
+                .collection(Constants.RESTAURANT_COLLECTION)
+                .document(restaurantId)
+                .collection(Constants.STORAGE_COLLECTION)
+                .add(data);
+
+        dr.addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+            @Override
+            public void onSuccess(DocumentReference documentReference) {
+                onCallback.onComplete(true);
+            }
+        })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        onCallback.onComplete(false);
+                    }
+                });
+    }
+
+    public static void addEmployee(AddStorageCallback onCallback, FirebaseFirestore db, String restaurantId, Map<String, String> data) {
+        Task<DocumentReference> dr = db.collection(Constants.DATABASE_COLLECTION)
+                .document(Constants.RESTAURANT_DOCUMENT)
+                .collection(Constants.RESTAURANT_COLLECTION)
+                .document(restaurantId)
+                .collection(Constants.EMPLOYEES_COLLECTION)
+                .add(data);
+
+        dr.addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                    @Override
+                    public void onSuccess(DocumentReference documentReference) {
+                        onCallback.onComplete(true);
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        onCallback.onComplete(false);
+                    }
+                });
+    }
+
+    public static void findUserByEmail(FirebaseFirestore db, String email) {
+
+    }
+
+    public static void addOwnedRestaurant(FirebaseFirestore db, String restaurantId, String uId) {
+        // Registers the restaurant to current user
+        // Appends user OwnedRestaurants array with current restaurants id
+        db.collection(Constants.DATABASE_COLLECTION)
+                .document(Constants.USER_DOCUMENT)
+                .collection(Constants.USER_COLLECTION)
+                .document(uId)
+                .update("OwnedRestaurants", FieldValue.arrayUnion(restaurantId));
+    }
+
     public interface GetRestaurantCallback {
+        void onCallback(HashMap<String, Object> data);
+    }
+
+    public interface GetStorageCallback {
+        void onCallback(HashMap<String, Object> data);
+    }
+
+    public interface GetEmployeeCallback {
         void onCallback(HashMap<String, Object> data);
     }
 
@@ -167,6 +296,14 @@ public class FirebaseDB {
     }
 
     public interface AddRestaurantCallback {
+        void onComplete(Boolean status);
+    }
+
+    public interface AddStorageCallback {
+        void onComplete(Boolean status);
+    }
+
+    public interface AddEmployeeCallback {
         void onComplete(Boolean status);
     }
 }

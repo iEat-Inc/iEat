@@ -13,6 +13,7 @@ public class NewShelfActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_shelf);
+        getSupportActionBar().hide();
         backArrow = findViewById(R.id.new_shelf_back_arrow);
         backArrow.setOnClickListener(v -> finish());
     }

@@ -25,6 +25,8 @@ public class StorageActivity extends AppCompatActivity implements StorageListAda
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_storage);
 
         back_arrow = findViewById(R.id.storage_back_arrow);

@@ -1,13 +1,11 @@
 package lv.ieatinc.ieat.fragments;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.util.Log;
 import android.util.Patterns;
@@ -23,7 +21,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.auth.User;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -31,7 +28,6 @@ import java.util.Map;
 import lv.ieatinc.ieat.BaseActivity;
 import lv.ieatinc.ieat.Constants;
 import lv.ieatinc.ieat.R;
-import lv.ieatinc.ieat.adapters.RestaurantListAdapter;
 import lv.ieatinc.ieat.utilities.FirebaseDB;
 
 
@@ -55,7 +51,7 @@ public class SignupFragment extends Fragment {
 
         mAuth = FirebaseAuth.getInstance();
 
-        ImageView back_arrow = view.findViewById(R.id.signup_back_arrow2);
+        ImageView back_arrow = view.findViewById(R.id.signup_back_arrow);
         back_arrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -166,6 +162,9 @@ public class SignupFragment extends Fragment {
                                     if(status) {
                                         Toast.makeText(getContext(), "User created!",
                                                 Toast.LENGTH_SHORT).show();
+                                        Intent intent = new Intent(getActivity(), BaseActivity.class);
+                                        startActivity(intent);
+                                        getActivity().finish();
                                     } else {
                                         user.delete()
                                                 .addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -178,9 +177,6 @@ public class SignupFragment extends Fragment {
                                     }
                                 }
                             }, db, user.getUid(), data);
-                            Intent intent = new Intent(getActivity(), BaseActivity.class);
-                            startActivity(intent);
-                            getActivity().finish();
                         } else {
                             Log.w(TAG, "createUserWithEmail:failure", task.getException());
                             Toast.makeText(getContext(), "This email already exists.",

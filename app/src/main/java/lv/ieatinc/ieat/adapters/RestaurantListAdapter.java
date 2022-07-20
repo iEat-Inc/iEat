@@ -23,24 +23,35 @@ import lv.ieatinc.ieat.fragments.ForgotPasswordFragment;
 
 public class RestaurantListAdapter extends RecyclerView.Adapter<RestaurantListAdapter.ViewHolder>{
     private HashMap<String, Object> localDataSet;
-    private final String TAG = "RESTAURANT LIST ADAPTER";
+    private static final String TAG = "RESTAURANT LIST ADAPTER";
+    private OnRestaurantClickListener mOnRestaurantClickListener;
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private final Button btn;
+        private OnRestaurantClickListener onRestaurantClickListener;
 
-        public ViewHolder(View view) {
+        public ViewHolder(View view, OnRestaurantClickListener onClickListener) {
             super(view);
 
             btn = (Button) view.findViewById(R.id.restaurant_list_item_button);
+            this.onRestaurantClickListener = onClickListener;
+
+            btn.setOnClickListener(this);
         }
 
         public Button getButton() {
             return btn;
         }
+
+        @Override
+        public void onClick(View view) {
+            onRestaurantClickListener.onClick(getAdapterPosition());
+        }
     }
 
-    public RestaurantListAdapter(HashMap<String, Object> dataSet) {
+    public RestaurantListAdapter(HashMap<String, Object> dataSet, OnRestaurantClickListener onClickListener) {
         localDataSet = dataSet;
+        this.mOnRestaurantClickListener = onClickListener;
     }
 
     @Override
@@ -48,7 +59,7 @@ public class RestaurantListAdapter extends RecyclerView.Adapter<RestaurantListAd
         View view = LayoutInflater.from(viewGroup.getContext())
                 .inflate(R.layout.restaurant_list_item, viewGroup, false);
 
-        return new ViewHolder(view);
+        return new ViewHolder(view, mOnRestaurantClickListener);
     }
 
     @Override
@@ -58,12 +69,6 @@ public class RestaurantListAdapter extends RecyclerView.Adapter<RestaurantListAd
         Object key = localDataSet.keySet().toArray()[position];
         Map<String, String> data = (Map<String, String>) localDataSet.get(key);
         viewHolder.getButton().setText(data.get("Name"));
-        viewHolder.getButton().setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
     }
 
     @Override
@@ -71,7 +76,7 @@ public class RestaurantListAdapter extends RecyclerView.Adapter<RestaurantListAd
         return localDataSet.size();
     }
 
-    public interface OnClickListener {
+    public interface OnRestaurantClickListener {
         void onClick(int position);
     }
 }
