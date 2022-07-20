@@ -15,6 +15,7 @@
         <entry key="app/src/main/res/layout/activity_new_product.xml" value="0.24596143824908806" />
         <entry key="app/src/main/res/layout/activity_new_shelf.xml" value="0.20652785593697243" />
         <entry key="app/src/main/res/layout/activity_restaurant.xml" value="0.24583333333333332" />
+        <entry key="app/src/main/res/layout/activity_shelf.xml" value="0.2003376477208779" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_storage.xml" value="0.2003376477208779" />
         <entry key="app/src/main/res/layout/base_activity.xml" value="0.2598958333333333" />
@@ -25,6 +26,7 @@
         <entry key="app/src/main/res/layout/new_storage_activity.xml" value="0.13168261114237478" />
         <entry key="app/src/main/res/layout/restaurant_list_item.xml" value="0.329935125115848" />
         <entry key="app/src/main/res/layout/restaurants_list_item.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/shelf_list_item.xml" value="0.24479166666666666" />
         <entry key="app/src/main/res/layout/signup_fragment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/storage_list_item.xml" value="0.24479166666666666" />
       </map>
