@@ -11,6 +11,8 @@
         android:layout_marginBottom="10dp"
         android:fontFamily="@font/robotoflex"
         android:paddingVertical="20dp"
+        android:background="@drawable/home_bt_custom"
+        app:backgroundTint="@null"
         android:text="Shelf"
         android:textColor="@color/secondary_green"
         android:textSize="16sp"

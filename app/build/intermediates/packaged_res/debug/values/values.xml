@@ -4,6 +4,12 @@
         <item>Manager</item>
         <item>Employee</item>
     </string-array>
+    <string-array name="units_of_measurements">
+        <item>kg</item>
+        <item>l</item>
+        <item>pc</item>
+
+    </string-array>
     <color name="black">#FF000000</color>
     <color name="primary_green">#8FD14F</color>
     <color name="purple_200">#FFBB86FC</color>
@@ -13,8 +19,10 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <string name="add_product">Add product</string>
     <string name="add_shelf">Add shelf</string>
     <string name="add_storage">Add storage</string>
+    <string name="amount">Amount</string>
     <string name="app_name">iEat</string>
     <string name="create_a_storage">Create storage</string>
     <string name="create_account">Create account</string>
@@ -33,6 +41,7 @@
     <string name="enter_email">Email</string>
     <string name="enter_name">Username</string>
     <string name="enter_password">Password</string>
+    <string name="expiration_date">Expiration date</string>
     <string name="forgot_password">Forgot password</string>
     <string name="forgot_password_email_authentication"><u>Forgot password (Email authentication)</u></string>
     <string name="forgot_password_phone_authentication"><u>Forgot password (Phone authentication)</u></string>
@@ -49,9 +58,11 @@
     <string name="home_restaurant_the_poorest">Restaurant \"The poorest\"</string>
     <string name="new_restaurant">New restaurant</string>
     <string name="new_shelf">New shelf</string>
+    <string name="product_name">Product name</string>
     <string name="project_id" translatable="false">ieat-40f8f</string>
     <string name="restaurant_name">Restaurant name</string>
     <string name="send_the_code"><u>Send the code</u></string>
+    <string name="shelf_add_product">Add product</string>
     <string name="storage1">Storage1</string>
     <string name="storage_name">Storage name</string>
     <string name="storage_size">Storage size</string>
