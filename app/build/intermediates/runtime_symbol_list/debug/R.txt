@@ -30,6 +30,10 @@ int anim fragment_fast_out_extra_slow_in 0x7f01001c
 int anim mtrl_bottom_sheet_slide_in 0x7f01001d
 int anim mtrl_bottom_sheet_slide_out 0x7f01001e
 int anim mtrl_card_lowers_interpolator 0x7f01001f
+int anim slide_in_left 0x7f010020
+int anim slide_in_right 0x7f010021
+int anim slide_out_left 0x7f010022
+int anim slide_out_right 0x7f010023
 int animator design_appbar_state_list_animator 0x7f020000
 int animator design_fab_hide_motion_spec 0x7f020001
 int animator design_fab_show_motion_spec 0x7f020002
@@ -3617,6 +3621,7 @@ int style Animation_AppCompat_DropDownUp 0x7f120004
 int style Animation_AppCompat_Tooltip 0x7f120005
 int style Animation_Design_BottomSheetDialog 0x7f120006
 int style Animation_MaterialComponents_BottomSheetDialog 0x7f120007
+int style AppTheme 0x7f12041e
 int style Base_AlertDialog_AppCompat 0x7f120008
 int style Base_AlertDialog_AppCompat_Light 0x7f120009
 int style Base_Animation_AppCompat_Dialog 0x7f12000a
@@ -3881,6 +3886,7 @@ int style Base_Widget_MaterialComponents_TextView 0x7f12010c
 int style CardView 0x7f12010d
 int style CardView_Dark 0x7f12010e
 int style CardView_Light 0x7f12010f
+int style CustomActivityAnimation 0x7f12041f
 int style EmptyTheme 0x7f120110
 int style MaterialAlertDialog_Material3 0x7f120111
 int style MaterialAlertDialog_Material3_Body_Text 0x7f120112

@@ -1,5 +1,9 @@
 R_DEF: Internal format may change without notice
 local
+anim slide_in_left
+anim slide_in_right
+anim slide_out_left
+anim slide_out_right
 array employee_types
 array units_of_measurements
 color black
@@ -206,6 +210,8 @@ string storage1
 string storage_name
 string storage_size
 string storage_tag
+style AppTheme
+style CustomActivityAnimation
 style Theme.IEat
 xml backup_rules
 xml data_extraction_rules
