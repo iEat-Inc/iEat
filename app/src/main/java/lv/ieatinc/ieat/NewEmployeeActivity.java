@@ -155,6 +155,7 @@ public class NewEmployeeActivity extends AppCompatActivity {
                                 }
                             }, db, auth.getCurrentUser().getUid(), new_data);
                             finish();
+                            overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
                         } else {
                             Log.w(TAG, "createUserWithEmail:failure", task.getException());
                             Toast.makeText(getBaseContext(), "This email already exists.",
@@ -165,7 +166,10 @@ public class NewEmployeeActivity extends AppCompatActivity {
             }
         });
 
-        backArrow.setOnClickListener(v -> finish());
+        backArrow.setOnClickListener(v -> {
+            finish();
+            overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
+        });
 
         Spinner employeeTypes = findViewById(R.id.new_employee_spinner_types);
         ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this, R.array.employee_types, android.R.layout.simple_spinner_item);

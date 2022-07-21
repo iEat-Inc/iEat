@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Parcelable;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -19,7 +18,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
-import java.util.Map;
 
 import lv.ieatinc.ieat.AuthenticationActivity;
 import lv.ieatinc.ieat.R;
@@ -72,6 +70,7 @@ public class HomeFragment extends Fragment implements RestaurantListAdapter.OnRe
                 Intent intent = new Intent(getActivity(), AuthenticationActivity.class);
                 FirebaseAuth.getInstance().signOut();
                 startActivity(intent);
+                getActivity().overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
                 getActivity().finish();
             }
         });
@@ -82,6 +81,12 @@ public class HomeFragment extends Fragment implements RestaurantListAdapter.OnRe
             public void onClick(View view) {
                 getActivity().getSupportFragmentManager()
                         .beginTransaction()
+                        .setCustomAnimations(
+                                R.anim.slide_in_right,
+                                R.anim.slide_out_left,
+                                R.anim.slide_in_left,
+                                R.anim.slide_out_right
+                        )
                         .replace(R.id.baseFragmentContainer, NewRestaurantFragment.class, null)
                         .setReorderingAllowed(true)
                         .addToBackStack("RestaurantBackStack")
@@ -100,6 +105,7 @@ public class HomeFragment extends Fragment implements RestaurantListAdapter.OnRe
         HashMap<String, Object> data = (HashMap<String, Object>) restaurant_data.get(key);
         intent.putExtra(EXTRA_DATA, data);
         startActivity(intent);
+        getActivity().overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
         getActivity().finish();
     }
 

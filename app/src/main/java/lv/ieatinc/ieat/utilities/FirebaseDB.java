@@ -135,6 +135,32 @@ public class FirebaseDB {
 
     }
 
+    public static void getShelves(GetShelvesCallback onCallback, FirebaseFirestore db, String restaurantId, String storageId) {
+        HashMap<String, Object> documents = new HashMap<>();
+
+        db.collection(Constants.DATABASE_COLLECTION)
+                .document(Constants.RESTAURANT_DOCUMENT)
+                .collection(Constants.RESTAURANT_COLLECTION)
+                .document(restaurantId)
+                .collection(Constants.STORAGE_COLLECTION)
+                .document(storageId)
+                .collection(Constants.SHELF_COLLECTION)
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                documents.put(document.getId(), document.getData());
+                            }
+                            onCallback.onCallback(documents);
+                        } else {
+                            Log.w(TAG, "Error getting shelves.", task.getException());
+                        }
+                    }
+                });
+    }
+
     public static void getEmployees(GetEmployeeCallback onCallback, FirebaseFirestore db, String restaurantId) {
         HashMap<String, Object> documents = new HashMap<>();
 
@@ -232,9 +258,57 @@ public class FirebaseDB {
         dr.addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
             @Override
             public void onSuccess(DocumentReference documentReference) {
+                Map<String,Object> id = new HashMap<>();
+                id.put("Id", dr.getResult().getId());
+
+                db.collection(Constants.DATABASE_COLLECTION)
+                        .document(Constants.RESTAURANT_DOCUMENT)
+                        .collection(Constants.RESTAURANT_COLLECTION)
+                        .document(restaurantId)
+                        .collection(Constants.STORAGE_COLLECTION)
+                        .document(dr.getResult().getId())
+                        .update(id);
+
                 onCallback.onComplete(true);
             }
         })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        onCallback.onComplete(false);
+                    }
+                });
+    }
+
+    public static void addShelf(AddShelfCallback onCallback, FirebaseFirestore db, String restaurantId, String storageId, Map<String, String> data) {
+        Task<DocumentReference> dr = db.collection(Constants.DATABASE_COLLECTION)
+                .document(Constants.RESTAURANT_DOCUMENT)
+                .collection(Constants.RESTAURANT_COLLECTION)
+                .document(restaurantId)
+                .collection(Constants.STORAGE_COLLECTION)
+                .document(storageId)
+                .collection(Constants.SHELF_COLLECTION)
+                .add(data);
+
+        dr.addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                    @Override
+                    public void onSuccess(DocumentReference documentReference) {
+                        Map<String,Object> id = new HashMap<>();
+                        id.put("Id", dr.getResult().getId());
+
+                        db.collection(Constants.DATABASE_COLLECTION)
+                                .document(Constants.RESTAURANT_DOCUMENT)
+                                .collection(Constants.RESTAURANT_COLLECTION)
+                                .document(restaurantId)
+                                .collection(Constants.STORAGE_COLLECTION)
+                                .document(storageId)
+                                .collection(Constants.SHELF_COLLECTION)
+                                .document(dr.getResult().getId())
+                                .update(id);
+
+                        onCallback.onComplete(true);
+                    }
+                })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
@@ -287,6 +361,10 @@ public class FirebaseDB {
         void onCallback(HashMap<String, Object> data);
     }
 
+    public interface GetShelvesCallback {
+        void onCallback(HashMap<String, Object> data);
+    }
+
     public interface GetEmployeeCallback {
         void onCallback(HashMap<String, Object> data);
     }
@@ -300,6 +378,10 @@ public class FirebaseDB {
     }
 
     public interface AddStorageCallback {
+        void onComplete(Boolean status);
+    }
+
+    public interface AddShelfCallback {
         void onComplete(Boolean status);
     }
 

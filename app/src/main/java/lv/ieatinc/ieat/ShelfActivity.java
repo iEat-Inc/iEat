@@ -22,6 +22,7 @@ public class ShelfActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), StorageActivity.class).
                         setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
 
             }
         });

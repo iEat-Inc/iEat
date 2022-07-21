@@ -1,6 +1,5 @@
 package lv.ieatinc.ieat.fragments;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.os.Bundle;
@@ -29,12 +28,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import org.w3c.dom.Text;
-
-import java.util.Map;
-
 import lv.ieatinc.ieat.BaseActivity;
-import lv.ieatinc.ieat.utilities.FirebaseDB;
 import lv.ieatinc.ieat.R;
 
 public class LoginFragment extends Fragment {
@@ -159,6 +153,12 @@ public class LoginFragment extends Fragment {
             public void onClick(View view) {
                 activity.getSupportFragmentManager() // getParentFragmentManager/getChildFragmentManager doesn't seem to work
                         .beginTransaction()
+                        .setCustomAnimations(
+                                R.anim.slide_in_right,
+                                R.anim.slide_out_left,
+                                R.anim.slide_in_left,
+                                R.anim.slide_out_right
+                        )
                         .replace(R.id.fragmentContainer, ForgotPasswordFragment.class, null)
                         .setReorderingAllowed(true)
                         .addToBackStack("userControlBackStack") // Use this to go back to previous fragment

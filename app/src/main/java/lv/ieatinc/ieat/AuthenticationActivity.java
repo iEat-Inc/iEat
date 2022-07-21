@@ -2,6 +2,9 @@ package lv.ieatinc.ieat;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.transition.Explode;
+import android.transition.Transition;
+import android.transition.TransitionSet;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -19,10 +22,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
-import lv.ieatinc.ieat.fragments.LoginFragment;
 import lv.ieatinc.ieat.fragments.SignupFragment;
 
 public class AuthenticationActivity extends AppCompatActivity {
@@ -36,6 +37,7 @@ public class AuthenticationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         getSupportActionBar().hide();
         mAuth = FirebaseAuth.getInstance();
     }
@@ -84,6 +86,12 @@ public class AuthenticationActivity extends AppCompatActivity {
     public void buttonChangeActivity(View view) {
         getSupportFragmentManager() // getParentFragmentManager/getChildFragmentManager doesn't seem to work
                 .beginTransaction()
+                .setCustomAnimations(
+                        R.anim.slide_in_right,
+                        R.anim.slide_out_left,
+                        R.anim.slide_in_left,
+                        R.anim.slide_out_right
+                )
                 .replace(R.id.fragmentContainer, SignupFragment.class, null)
                 .setReorderingAllowed(true)
                 .addToBackStack("userControlBackStack")

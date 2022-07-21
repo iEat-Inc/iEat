@@ -88,6 +88,7 @@ public class NewStorageActivity extends AppCompatActivity {
                         if(status) {
                             Toast.makeText(getBaseContext(), "Storage created", Toast.LENGTH_SHORT).show();
                             finish();
+                            overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
                         } else {
                             Toast.makeText(getBaseContext(), "Failed to create a new storage", Toast.LENGTH_SHORT).show();
                         }
@@ -96,7 +97,10 @@ public class NewStorageActivity extends AppCompatActivity {
             }
         });
 
-        backArrow.setOnClickListener(v -> finish());
+        backArrow.setOnClickListener(v -> {
+            finish();
+            overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
+        });
 
     }
 
