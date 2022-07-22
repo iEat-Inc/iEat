@@ -24,6 +24,10 @@
         "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/layout/activity_restaurant.xml"
     },
     {
+        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/anim_slide_out_right.xml.flat",
+        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/anim/slide_out_right.xml"
+    },
+    {
         "merged": "lv.ieatinc.ieat.app-merged_res-32:/anim_slide_in_left.xml.flat",
         "source": "lv.ieatinc.ieat.app-main-34:/anim/slide_in_left.xml"
     },
@@ -36,8 +40,16 @@
         "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/raw/animation2.json"
     },
     {
+        "merged": "lv.ieatinc.ieat.app-merged_res-32:/anim_idle.xml.flat",
+        "source": "lv.ieatinc.ieat.app-main-34:/anim/idle.xml"
+    },
+    {
         "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/font_fredokaone.ttf.flat",
         "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/font/fredokaone.ttf"
+    },
+    {
+        "merged": "lv.ieatinc.ieat.app-merged_res-32:/anim_fade_in.xml.flat",
+        "source": "lv.ieatinc.ieat.app-main-34:/anim/fade_in.xml"
     },
     {
         "merged": "lv.ieatinc.ieat.app-merged_res-32:/anim_slide_out_right.xml.flat",
@@ -60,6 +72,10 @@
         "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "lv.ieatinc.ieat.app-merged_res-32:/anim_fade_out.xml.flat",
+        "source": "lv.ieatinc.ieat.app-main-34:/anim/fade_out.xml"
+    },
+    {
         "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/layout_shelf_list_item.xml.flat",
         "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/layout/shelf_list_item.xml"
     },
@@ -76,12 +92,12 @@
         "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/layout/signup_fragment.xml"
     },
     {
-        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/mipmap-xxhdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/xml_data_extraction_rules.xml.flat",
         "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/drawable-v24_logo_dark_green.png.flat",
@@ -148,6 +164,10 @@
         "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/mipmap-mdpi/ic_launcher.webp"
     },
     {
+        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/anim_slide_out_left.xml.flat",
+        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/anim/slide_out_left.xml"
+    },
+    {
         "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/mipmap-xhdpi/ic_launcher_round.webp"
     },
@@ -164,8 +184,16 @@
         "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/layout/restaurant_storage_list_item.xml"
     },
     {
+        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/anim_slide_in_left.xml.flat",
+        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/anim/slide_in_left.xml"
+    },
+    {
         "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "lv.ieatinc.ieat.app-merged_res-32:/layout_activity_new_shelf.xml.flat",
+        "source": "lv.ieatinc.ieat.app-main-34:/layout/activity_new_shelf.xml"
     },
     {
         "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/drawable_ic_storage.xml.flat",
@@ -180,12 +208,24 @@
         "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/drawable/triangle.xml"
     },
     {
+        "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/anim_slide_in_right.xml.flat",
+        "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/anim/slide_in_right.xml"
+    },
+    {
+        "merged": "lv.ieatinc.ieat.app-merged_res-32:/anim_slide_down.xml.flat",
+        "source": "lv.ieatinc.ieat.app-main-34:/anim/slide_down.xml"
+    },
+    {
         "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/raw_logoanimation.json.flat",
         "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/raw/logoanimation.json"
     },
     {
         "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "lv.ieatinc.ieat.app-merged_res-32:/layout_activity_restaurant.xml.flat",
+        "source": "lv.ieatinc.ieat.app-main-34:/layout/activity_restaurant.xml"
     },
     {
         "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/drawable_ic_left_arrow.xml.flat",
@@ -210,6 +250,10 @@
     {
         "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/layout_login_fragment.xml.flat",
         "source": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-main-34:/layout/login_fragment.xml"
+    },
+    {
+        "merged": "lv.ieatinc.ieat.app-merged_res-32:/layout_new_storage_activity.xml.flat",
+        "source": "lv.ieatinc.ieat.app-main-34:/layout/new_storage_activity.xml"
     },
     {
         "merged": "/Users/alinaverkholomova/.gradle/daemon/7.3.3/lv.ieatinc.ieat.app-merged_res-32:/layout_base_activity.xml.flat",

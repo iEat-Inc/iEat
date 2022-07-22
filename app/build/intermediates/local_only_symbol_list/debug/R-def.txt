@@ -1,5 +1,9 @@
 R_DEF: Internal format may change without notice
 local
+anim fade_in
+anim fade_out
+anim idle
+anim slide_down
 anim slide_in_left
 anim slide_in_right
 anim slide_out_left
@@ -100,7 +104,6 @@ id new_shelf_header
 id new_shelf_name_input
 id new_shelf_size_input
 id new_shelf_tag_input
-id new_storage_add_button
 id new_storage_back_arrow
 id new_storage_background_triangle
 id new_storage_header
